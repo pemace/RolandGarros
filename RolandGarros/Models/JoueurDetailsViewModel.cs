@@ -58,5 +58,6 @@ namespace RolandGarros.Models
             ResourceType = typeof(Properties.Resources)
             )]
         public int? Classement { get; set; }
+        public string? PhotoUrl { get; set; }
     }
 }

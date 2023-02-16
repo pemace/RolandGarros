@@ -275,7 +275,8 @@ namespace RolandGarros.Data
                             Prenom= "Youcef",
                             DateNaissance=new DateTime(1983,12,10),
                             NationaliteId=4,
-                            Sexe=Sexe.Homme
+                            Sexe=Sexe.Homme,
+                            PhotoUrl="/images/profiles/rihane.jpg"
                         },
                     new
                     {
@@ -284,7 +285,8 @@ namespace RolandGarros.Data
                         Prenom = "Gaël",
                         DateNaissance = new DateTime(1986, 9, 1),
                         NationaliteId = 75,
-                        Sexe = Sexe.Homme
+                        Sexe = Sexe.Homme,
+                        PhotoUrl = "/images/profiles/monfils.png"
                     },
                     new
                     {
@@ -293,7 +295,8 @@ namespace RolandGarros.Data
                         Prenom = "Elise",
                         DateNaissance = new DateTime(1995, 11, 17),
                         NationaliteId = 18,
-                        Sexe = Sexe.Femme
+                        Sexe = Sexe.Femme,
+                        PhotoUrl = "/images/profiles/mertens.webp"
                     },
                     new
                     {
@@ -302,7 +305,8 @@ namespace RolandGarros.Data
                         Prenom = "Caroline",
                         DateNaissance = new DateTime(1994, 11, 17),
                         NationaliteId = 75,
-                        Sexe = Sexe.Femme
+                        Sexe = Sexe.Femme,
+                        PhotoUrl = "/images/profiles/garcia.webp"
                     }
                 );
 

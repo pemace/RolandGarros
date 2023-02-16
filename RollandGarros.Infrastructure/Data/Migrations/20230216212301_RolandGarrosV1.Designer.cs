@@ -12,7 +12,7 @@ using RolandGarros.Data;
 namespace RolandGarros.Data.Migrations
 {
     [DbContext(typeof(TennisContext))]
-    [Migration("20230216144506_RolandGarrosV1")]
+    [Migration("20230216212301_RolandGarrosV1")]
     partial class RolandGarrosV1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -39,6 +39,9 @@ namespace RolandGarros.Data.Migrations
                         .IsRequired()
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
+
+                    b.Property<string>("PhotoUrl")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Prenom")
                         .IsRequired()
@@ -125,6 +128,9 @@ namespace RolandGarros.Data.Migrations
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
+                    b.Property<string>("PhotoUrl")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Prenom")
                         .IsRequired()
                         .HasMaxLength(30)
@@ -146,6 +152,7 @@ namespace RolandGarros.Data.Migrations
                             DateNaissance = new DateTime(1983, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             NationaliteId = 4,
                             Nom = "Rihane",
+                            PhotoUrl = "/images/profiles/rihane.jpg",
                             Prenom = "Youcef",
                             Sexe = 0
                         },
@@ -155,6 +162,7 @@ namespace RolandGarros.Data.Migrations
                             DateNaissance = new DateTime(1986, 9, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             NationaliteId = 75,
                             Nom = "Monfils",
+                            PhotoUrl = "/images/profiles/monfils.png",
                             Prenom = "Gaël",
                             Sexe = 0
                         },
@@ -164,6 +172,7 @@ namespace RolandGarros.Data.Migrations
                             DateNaissance = new DateTime(1995, 11, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             NationaliteId = 18,
                             Nom = "Mertens",
+                            PhotoUrl = "/images/profiles/mertens.webp",
                             Prenom = "Elise",
                             Sexe = 1
                         },
@@ -173,6 +182,7 @@ namespace RolandGarros.Data.Migrations
                             DateNaissance = new DateTime(1994, 11, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             NationaliteId = 75,
                             Nom = "Garcia",
+                            PhotoUrl = "/images/profiles/garcia.webp",
                             Prenom = "Caroline",
                             Sexe = 1
                         });
@@ -266,6 +276,9 @@ namespace RolandGarros.Data.Migrations
                         .IsRequired()
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
+
+                    b.Property<string>("PhotoUrl")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Prenom")
                         .IsRequired()

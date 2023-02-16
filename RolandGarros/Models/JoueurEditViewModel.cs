@@ -54,6 +54,9 @@ namespace RolandGarros.Models
             Prompt = "LabelJoueurClassementPrompt",
             ResourceType = typeof(Properties.Resources)
             )]
+        public IFormFile Photo { get; init; } = null!;
+        public string? PhotoUrl { get; set; }
+
         public int? Classement { get; set; }
     }
 }

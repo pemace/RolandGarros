@@ -48,7 +48,8 @@ namespace RolandGarros.Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nom = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
                     Prenom = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
-                    NationaliteId = table.Column<int>(type: "int", nullable: false)
+                    NationaliteId = table.Column<int>(type: "int", nullable: false),
+                    PhotoUrl = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -72,7 +73,8 @@ namespace RolandGarros.Data.Migrations
                     Classement = table.Column<int>(type: "int", nullable: true),
                     Nom = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
                     Prenom = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
-                    NationaliteId = table.Column<int>(type: "int", nullable: false)
+                    NationaliteId = table.Column<int>(type: "int", nullable: false),
+                    PhotoUrl = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -95,7 +97,8 @@ namespace RolandGarros.Data.Migrations
                     MotDePasse = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
                     Nom = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
                     Prenom = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
-                    NationaliteId = table.Column<int>(type: "int", nullable: false)
+                    NationaliteId = table.Column<int>(type: "int", nullable: false),
+                    PhotoUrl = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -502,22 +505,22 @@ namespace RolandGarros.Data.Migrations
 
             migrationBuilder.InsertData(
                 table: "Arbitres",
-                columns: new[] { "Id", "NationaliteId", "Nom", "Prenom" },
+                columns: new[] { "Id", "NationaliteId", "Nom", "PhotoUrl", "Prenom" },
                 values: new object[,]
                 {
-                    { 1, 1, "Dujardin", "François" },
-                    { 2, 2, "Al Kashi", "Youssef" }
+                    { 1, 1, "Dujardin", null, "François" },
+                    { 2, 2, "Al Kashi", null, "Youssef" }
                 });
 
             migrationBuilder.InsertData(
                 table: "Joueurs",
-                columns: new[] { "Id", "Classement", "DateNaissance", "NationaliteId", "Nom", "Prenom", "Sexe" },
+                columns: new[] { "Id", "Classement", "DateNaissance", "NationaliteId", "Nom", "PhotoUrl", "Prenom", "Sexe" },
                 values: new object[,]
                 {
-                    { 1, null, new DateTime(1983, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), 4, "Rihane", "Youcef", 0 },
-                    { 2, null, new DateTime(1986, 9, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 75, "Monfils", "Gaël", 0 },
-                    { 3, null, new DateTime(1995, 11, 17, 0, 0, 0, 0, DateTimeKind.Unspecified), 18, "Mertens", "Elise", 1 },
-                    { 4, null, new DateTime(1994, 11, 17, 0, 0, 0, 0, DateTimeKind.Unspecified), 75, "Garcia", "Caroline", 1 }
+                    { 1, null, new DateTime(1983, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), 4, "Rihane", "/images/profiles/rihane.jpg", "Youcef", 0 },
+                    { 2, null, new DateTime(1986, 9, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 75, "Monfils", "/images/profiles/monfils.png", "Gaël", 0 },
+                    { 3, null, new DateTime(1995, 11, 17, 0, 0, 0, 0, DateTimeKind.Unspecified), 18, "Mertens", "/images/profiles/mertens.webp", "Elise", 1 },
+                    { 4, null, new DateTime(1994, 11, 17, 0, 0, 0, 0, DateTimeKind.Unspecified), 75, "Garcia", "/images/profiles/garcia.webp", "Caroline", 1 }
                 });
 
             migrationBuilder.InsertData(

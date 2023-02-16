@@ -8,5 +8,6 @@ namespace RolandGarros.Entities
         [StringLength(30)] public string Prenom { get; set; } = null!;
         [Required] public Pays Nationalite { get; set; } = null!;
         public int NationaliteId { get; set; }
+        public string? PhotoUrl { get; set; }
     }
 }

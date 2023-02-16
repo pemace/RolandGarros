@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Hosting.Internal;
 using RolandGarros.Data;
 using RolandGarros.Entities;
 using RolandGarros.Models;
@@ -14,10 +15,12 @@ namespace RolandGarros.Controllers
     public class JoueursController : Controller
     {
         private readonly TennisContext _context;
+        private readonly IWebHostEnvironment HostingEnvironment;
 
-        public JoueursController(TennisContext context)
+        public JoueursController(TennisContext context, IWebHostEnvironment hostingEnvironment)
         {
             _context = context;
+            HostingEnvironment = hostingEnvironment;
         }
 
         // GET: Joueurs
@@ -43,12 +46,14 @@ namespace RolandGarros.Controllers
 
             JoueurDetailsViewModel joueurDetailsViewModel = new JoueurDetailsViewModel()
             {
+                Id=joueur.Id,
                 Nom=joueur.Nom,
                 Prenom=joueur.Prenom,
                 DateNaissance=joueur.DateNaissance,
                 Classement=joueur.Classement,
                 Nationalite=joueur.Nationalite.NomFrFr,
-                Sexe=joueur.Sexe
+                Sexe=joueur.Sexe,
+                PhotoUrl=joueur.PhotoUrl
             };
 
             return View(joueurDetailsViewModel);
@@ -209,6 +214,25 @@ namespace RolandGarros.Controllers
         private bool JoueurExists(int id)
         {
           return _context.Joueurs.Any(e => e.Id == id);
+        }
+
+        private async Task<string> UploadFile(int id,IFormFile file)
+        {
+            string webRootPath = HostingEnvironment.WebRootPath;
+            var filePath = Path.Combine(webRootPath, "images");
+            filePath = Path.Combine(filePath, "profiles");
+
+            if (!Directory.Exists(filePath))
+            {
+                Directory.CreateDirectory(filePath);
+            }
+            var fileName = id.ToString()+"-"+Path.GetFileName(file.FileName);
+            var copyPath = Path.Combine(filePath, fileName);
+            using (var stream = new FileStream(copyPath, FileMode.Create))
+            {
+                await file.CopyToAsync(stream);
+            }
+            return @$"/photos/profiles/{fileName}";
         }
     }
 }

@@ -13,6 +13,18 @@ html {
   min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
+.fondRolandGarros {
+    margin-bottom: 60px;
+    fill-opacity: 0.2;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-position: center center;
+    background-size: cover;
+    background-image: url('../images/fond.webp');
+}
+
+.nav-item:hover {
+    background-color: #F0F0F0;
+    color: white;
+    border-radius:10px;
 }
