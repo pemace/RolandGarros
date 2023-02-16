@@ -7,8 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.12" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\RolandGarros.Core\RolandGarros.Core.csproj" />
-    <ProjectReference Include="..\RollandGarros.Infrastructure\RollandGarros.Infrastructure.csproj" />
+    <ProjectReference Include="..\RollandGarros.Infrastructure\RolandGarros.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

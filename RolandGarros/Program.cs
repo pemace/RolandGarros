@@ -1,7 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using RolandGarros.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<TennisContext>(
+            options=>options.UseSqlServer(
+                builder.Configuration.GetConnectionString("localConnection")
+                )
+            );
 
 var app = builder.Build();
 

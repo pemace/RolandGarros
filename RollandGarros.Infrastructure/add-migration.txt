@@ -1,0 +1,1 @@
+Add-Migration RolandGarrosV1 -Context TennisContext -StartupProject RolandGarros -Project RolandGarros.Infrastructure -OutputDir Data\Migrations

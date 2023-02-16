@@ -1,0 +1,3 @@
+Remove-Migration -Context TennisContext -Project RolandGarros.Infrastructure
+
+
