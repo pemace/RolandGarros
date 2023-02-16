@@ -324,8 +324,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "AL",
                             Alpha3 = "ALB",
                             Code = 8,
-                            NomEnGb = "Albanie",
-                            NomFrFr = "Albania"
+                            NomEnGb = "Albania",
+                            NomFrFr = "Albanie"
                         },
                         new
                         {
@@ -333,8 +333,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "AQ",
                             Alpha3 = "ATA",
                             Code = 10,
-                            NomEnGb = "Antarctique",
-                            NomFrFr = "Antarctica"
+                            NomEnGb = "Antarctica",
+                            NomFrFr = "Antarctique"
                         },
                         new
                         {
@@ -342,8 +342,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "DZ",
                             Alpha3 = "DZA",
                             Code = 12,
-                            NomEnGb = "Algérie",
-                            NomFrFr = "Algeria"
+                            NomEnGb = "Algeria",
+                            NomFrFr = "Algérie"
                         },
                         new
                         {
@@ -351,8 +351,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "AS",
                             Alpha3 = "ASM",
                             Code = 16,
-                            NomEnGb = "Samoa Américaines",
-                            NomFrFr = "American Samoa"
+                            NomEnGb = "American Samoa",
+                            NomFrFr = "Samoa Américaines"
                         },
                         new
                         {
@@ -360,8 +360,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "AD",
                             Alpha3 = "AND",
                             Code = 20,
-                            NomEnGb = "Andorre",
-                            NomFrFr = "Andorra"
+                            NomEnGb = "Andorra",
+                            NomFrFr = "Andorre"
                         },
                         new
                         {
@@ -378,8 +378,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "AG",
                             Alpha3 = "ATG",
                             Code = 28,
-                            NomEnGb = "Antigua-et-Barbuda",
-                            NomFrFr = "Antigua and Barbuda"
+                            NomEnGb = "Antigua and Barbuda",
+                            NomFrFr = "Antigua-et-Barbuda"
                         },
                         new
                         {
@@ -387,8 +387,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "AZ",
                             Alpha3 = "AZE",
                             Code = 31,
-                            NomEnGb = "Azerbaïdjan",
-                            NomFrFr = "Azerbaijan"
+                            NomEnGb = "Azerbaijan",
+                            NomFrFr = "Azerbaïdjan"
                         },
                         new
                         {
@@ -396,8 +396,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "AR",
                             Alpha3 = "ARG",
                             Code = 32,
-                            NomEnGb = "Argentine",
-                            NomFrFr = "Argentina"
+                            NomEnGb = "Argentina",
+                            NomFrFr = "Argentine"
                         },
                         new
                         {
@@ -405,8 +405,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "AU",
                             Alpha3 = "AUS",
                             Code = 36,
-                            NomEnGb = "Australie",
-                            NomFrFr = "Australia"
+                            NomEnGb = "Australia",
+                            NomFrFr = "Australie"
                         },
                         new
                         {
@@ -414,8 +414,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "AT",
                             Alpha3 = "AUT",
                             Code = 40,
-                            NomEnGb = "Autriche",
-                            NomFrFr = "Austria"
+                            NomEnGb = "Austria",
+                            NomFrFr = "Autriche"
                         },
                         new
                         {
@@ -432,8 +432,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "BH",
                             Alpha3 = "BHR",
                             Code = 48,
-                            NomEnGb = "Bahreïn",
-                            NomFrFr = "Bahrain"
+                            NomEnGb = "Bahrain",
+                            NomFrFr = "Bahreïn"
                         },
                         new
                         {
@@ -450,8 +450,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "AM",
                             Alpha3 = "ARM",
                             Code = 51,
-                            NomEnGb = "Arménie",
-                            NomFrFr = "Armenia"
+                            NomEnGb = "Armenia",
+                            NomFrFr = "Arménie"
                         },
                         new
                         {
@@ -459,8 +459,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "BB",
                             Alpha3 = "BRB",
                             Code = 52,
-                            NomEnGb = "Barbade",
-                            NomFrFr = "Barbados"
+                            NomEnGb = "Barbados",
+                            NomFrFr = "Barbade"
                         },
                         new
                         {
@@ -468,8 +468,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "BE",
                             Alpha3 = "BEL",
                             Code = 56,
-                            NomEnGb = "Belgique",
-                            NomFrFr = "Belgium"
+                            NomEnGb = "Belgium",
+                            NomFrFr = "Belgique"
                         },
                         new
                         {
@@ -477,8 +477,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "BM",
                             Alpha3 = "BMU",
                             Code = 60,
-                            NomEnGb = "Bermudes",
-                            NomFrFr = "Bermuda"
+                            NomEnGb = "Bermuda",
+                            NomFrFr = "Bermudes"
                         },
                         new
                         {
@@ -486,8 +486,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "BT",
                             Alpha3 = "BTN",
                             Code = 64,
-                            NomEnGb = "Bhoutan",
-                            NomFrFr = "Bhutan"
+                            NomEnGb = "Bhutan",
+                            NomFrFr = "Bhoutan"
                         },
                         new
                         {
@@ -495,8 +495,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "BO",
                             Alpha3 = "BOL",
                             Code = 68,
-                            NomEnGb = "Bolivie",
-                            NomFrFr = "Bolivia"
+                            NomEnGb = "Bolivia",
+                            NomFrFr = "Bolivie"
                         },
                         new
                         {
@@ -504,8 +504,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "BA",
                             Alpha3 = "BIH",
                             Code = 70,
-                            NomEnGb = "Bosnie-Herzégovine",
-                            NomFrFr = "Bosnia and Herzegovina"
+                            NomEnGb = "Bosnia and Herzegovina",
+                            NomFrFr = "Bosnie-Herzégovine"
                         },
                         new
                         {
@@ -522,8 +522,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "BV",
                             Alpha3 = "BVT",
                             Code = 74,
-                            NomEnGb = "Île Bouvet",
-                            NomFrFr = "Bouvet Island"
+                            NomEnGb = "Bouvet Island",
+                            NomFrFr = "Île Bouvet"
                         },
                         new
                         {
@@ -531,8 +531,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "BR",
                             Alpha3 = "BRA",
                             Code = 76,
-                            NomEnGb = "Brésil",
-                            NomFrFr = "Brazil"
+                            NomEnGb = "Brazil",
+                            NomFrFr = "Brésil"
                         },
                         new
                         {
@@ -549,8 +549,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "IO",
                             Alpha3 = "IOT",
                             Code = 86,
-                            NomEnGb = "Territoire Britannique de l'Océan Indien",
-                            NomFrFr = "British Indian Ocean Territory"
+                            NomEnGb = "British Indian Ocean Territory",
+                            NomFrFr = "Territoire Britannique de l'Océan Indien"
                         },
                         new
                         {
@@ -558,8 +558,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "SB",
                             Alpha3 = "SLB",
                             Code = 90,
-                            NomEnGb = "Îles Salomon",
-                            NomFrFr = "Solomon Islands"
+                            NomEnGb = "Solomon Islands",
+                            NomFrFr = "Îles Salomon"
                         },
                         new
                         {
@@ -567,8 +567,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "VG",
                             Alpha3 = "VGB",
                             Code = 92,
-                            NomEnGb = "Îles Vierges Britanniques",
-                            NomFrFr = "British Virgin Islands"
+                            NomEnGb = "British Virgin Islands",
+                            NomFrFr = "Îles Vierges Britanniques"
                         },
                         new
                         {
@@ -576,8 +576,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "BN",
                             Alpha3 = "BRN",
                             Code = 96,
-                            NomEnGb = "Brunéi Darussalam",
-                            NomFrFr = "Brunei Darussalam"
+                            NomEnGb = "Brunei Darussalam",
+                            NomFrFr = "Brunéi Darussalam"
                         },
                         new
                         {
@@ -585,8 +585,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "BG",
                             Alpha3 = "BGR",
                             Code = 100,
-                            NomEnGb = "Bulgarie",
-                            NomFrFr = "Bulgaria"
+                            NomEnGb = "Bulgaria",
+                            NomFrFr = "Bulgarie"
                         },
                         new
                         {
@@ -612,8 +612,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "BY",
                             Alpha3 = "BLR",
                             Code = 112,
-                            NomEnGb = "Bélarus",
-                            NomFrFr = "Belarus"
+                            NomEnGb = "Belarus",
+                            NomFrFr = "Bélarus"
                         },
                         new
                         {
@@ -621,8 +621,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "KH",
                             Alpha3 = "KHM",
                             Code = 116,
-                            NomEnGb = "Cambodge",
-                            NomFrFr = "Cambodia"
+                            NomEnGb = "Cambodia",
+                            NomFrFr = "Cambodge"
                         },
                         new
                         {
@@ -630,8 +630,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "CM",
                             Alpha3 = "CMR",
                             Code = 120,
-                            NomEnGb = "Cameroun",
-                            NomFrFr = "Cameroon"
+                            NomEnGb = "Cameroon",
+                            NomFrFr = "Cameroun"
                         },
                         new
                         {
@@ -648,8 +648,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "CV",
                             Alpha3 = "CPV",
                             Code = 132,
-                            NomEnGb = "Cap-vert",
-                            NomFrFr = "Cape Verde"
+                            NomEnGb = "Cape Verde",
+                            NomFrFr = "Cap-vert"
                         },
                         new
                         {
@@ -657,8 +657,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "KY",
                             Alpha3 = "CYM",
                             Code = 136,
-                            NomEnGb = "Îles Caïmanes",
-                            NomFrFr = "Cayman Islands"
+                            NomEnGb = "Cayman Islands",
+                            NomFrFr = "Îles Caïmanes"
                         },
                         new
                         {
@@ -666,8 +666,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "CF",
                             Alpha3 = "CAF",
                             Code = 140,
-                            NomEnGb = "République Centrafricaine",
-                            NomFrFr = "Central African"
+                            NomEnGb = "Central African",
+                            NomFrFr = "République Centrafricaine"
                         },
                         new
                         {
@@ -684,8 +684,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "TD",
                             Alpha3 = "TCD",
                             Code = 148,
-                            NomEnGb = "Tchad",
-                            NomFrFr = "Chad"
+                            NomEnGb = "Chad",
+                            NomFrFr = "Tchad"
                         },
                         new
                         {
@@ -693,8 +693,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "CL",
                             Alpha3 = "CHL",
                             Code = 152,
-                            NomEnGb = "Chili",
-                            NomFrFr = "Chile"
+                            NomEnGb = "Chile",
+                            NomFrFr = "Chili"
                         },
                         new
                         {
@@ -702,8 +702,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "CN",
                             Alpha3 = "CHN",
                             Code = 156,
-                            NomEnGb = "Chine",
-                            NomFrFr = "China"
+                            NomEnGb = "China",
+                            NomFrFr = "Chine"
                         },
                         new
                         {
@@ -711,8 +711,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "TW",
                             Alpha3 = "TWN",
                             Code = 158,
-                            NomEnGb = "Taïwan",
-                            NomFrFr = "Taiwan"
+                            NomEnGb = "Taiwan",
+                            NomFrFr = "Taïwan"
                         },
                         new
                         {
@@ -720,8 +720,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "CX",
                             Alpha3 = "CXR",
                             Code = 162,
-                            NomEnGb = "Île Christmas",
-                            NomFrFr = "Christmas Island"
+                            NomEnGb = "Christmas Island",
+                            NomFrFr = "Île Christmas"
                         },
                         new
                         {
@@ -729,8 +729,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "CC",
                             Alpha3 = "CCK",
                             Code = 166,
-                            NomEnGb = "Îles Cocos (Keeling)",
-                            NomFrFr = "Cocos (Keeling) Islands"
+                            NomEnGb = "Cocos (Keeling) Islands",
+                            NomFrFr = "Îles Cocos (Keeling)"
                         },
                         new
                         {
@@ -738,8 +738,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "CO",
                             Alpha3 = "COL",
                             Code = 170,
-                            NomEnGb = "Colombie",
-                            NomFrFr = "Colombia"
+                            NomEnGb = "Colombia",
+                            NomFrFr = "Colombie"
                         },
                         new
                         {
@@ -747,8 +747,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "KM",
                             Alpha3 = "COM",
                             Code = 174,
-                            NomEnGb = "Comores",
-                            NomFrFr = "Comoros"
+                            NomEnGb = "Comoros",
+                            NomFrFr = "Comores"
                         },
                         new
                         {
@@ -765,8 +765,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "CG",
                             Alpha3 = "COG",
                             Code = 178,
-                            NomEnGb = "République du Congo",
-                            NomFrFr = "Republic of the Congo"
+                            NomEnGb = "Republic of the Congo",
+                            NomFrFr = "République du Congo"
                         },
                         new
                         {
@@ -774,8 +774,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "CD",
                             Alpha3 = "COD",
                             Code = 180,
-                            NomEnGb = "République Démocratique du Congo",
-                            NomFrFr = "The Democratic Republic Of The Congo"
+                            NomEnGb = "The Democratic Republic Of The Congo",
+                            NomFrFr = "République Démocratique du Congo"
                         },
                         new
                         {
@@ -783,8 +783,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "CK",
                             Alpha3 = "COK",
                             Code = 184,
-                            NomEnGb = "Îles Cook",
-                            NomFrFr = "Cook Islands"
+                            NomEnGb = "Cook Islands",
+                            NomFrFr = "Îles Cook"
                         },
                         new
                         {
@@ -801,8 +801,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "HR",
                             Alpha3 = "HRV",
                             Code = 191,
-                            NomEnGb = "Croatie",
-                            NomFrFr = "Croatia"
+                            NomEnGb = "Croatia",
+                            NomFrFr = "Croatie"
                         },
                         new
                         {
@@ -819,8 +819,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "CY",
                             Alpha3 = "CYP",
                             Code = 196,
-                            NomEnGb = "Chypre",
-                            NomFrFr = "Cyprus"
+                            NomEnGb = "Cyprus",
+                            NomFrFr = "Chypre"
                         },
                         new
                         {
@@ -828,8 +828,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "CZ",
                             Alpha3 = "CZE",
                             Code = 203,
-                            NomEnGb = "République Tchèque",
-                            NomFrFr = "Czech Republic"
+                            NomEnGb = "Czech Republic",
+                            NomFrFr = "République Tchèque"
                         },
                         new
                         {
@@ -837,8 +837,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "BJ",
                             Alpha3 = "BEN",
                             Code = 204,
-                            NomEnGb = "Bénin",
-                            NomFrFr = "Benin"
+                            NomEnGb = "Benin",
+                            NomFrFr = "Bénin"
                         },
                         new
                         {
@@ -846,8 +846,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "DK",
                             Alpha3 = "DNK",
                             Code = 208,
-                            NomEnGb = "Danemark",
-                            NomFrFr = "Denmark"
+                            NomEnGb = "Denmark",
+                            NomFrFr = "Danemark"
                         },
                         new
                         {
@@ -855,8 +855,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "DM",
                             Alpha3 = "DMA",
                             Code = 212,
-                            NomEnGb = "Dominique",
-                            NomFrFr = "Dominica"
+                            NomEnGb = "Dominica",
+                            NomFrFr = "Dominique"
                         },
                         new
                         {
@@ -864,8 +864,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "DO",
                             Alpha3 = "DOM",
                             Code = 214,
-                            NomEnGb = "République Dominicaine",
-                            NomFrFr = "Dominican Republic"
+                            NomEnGb = "Dominican Republic",
+                            NomFrFr = "République Dominicaine"
                         },
                         new
                         {
@@ -873,8 +873,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "EC",
                             Alpha3 = "ECU",
                             Code = 218,
-                            NomEnGb = "Équateur",
-                            NomFrFr = "Ecuador"
+                            NomEnGb = "Ecuador",
+                            NomFrFr = "Équateur"
                         },
                         new
                         {
@@ -891,8 +891,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "GQ",
                             Alpha3 = "GNQ",
                             Code = 226,
-                            NomEnGb = "Guinée Équatoriale",
-                            NomFrFr = "Equatorial Guinea"
+                            NomEnGb = "Equatorial Guinea",
+                            NomFrFr = "Guinée Équatoriale"
                         },
                         new
                         {
@@ -900,8 +900,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "ET",
                             Alpha3 = "ETH",
                             Code = 231,
-                            NomEnGb = "Éthiopie",
-                            NomFrFr = "Ethiopia"
+                            NomEnGb = "Ethiopia",
+                            NomFrFr = "Éthiopie"
                         },
                         new
                         {
@@ -909,8 +909,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "ER",
                             Alpha3 = "ERI",
                             Code = 232,
-                            NomEnGb = "Érythrée",
-                            NomFrFr = "Eritrea"
+                            NomEnGb = "Eritrea",
+                            NomFrFr = "Érythrée"
                         },
                         new
                         {
@@ -918,8 +918,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "EE",
                             Alpha3 = "EST",
                             Code = 233,
-                            NomEnGb = "Estonie",
-                            NomFrFr = "Estonia"
+                            NomEnGb = "Estonia",
+                            NomFrFr = "Estonie"
                         },
                         new
                         {
@@ -927,8 +927,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "FO",
                             Alpha3 = "FRO",
                             Code = 234,
-                            NomEnGb = "Îles Féroé",
-                            NomFrFr = "Faroe Islands"
+                            NomEnGb = "Faroe Islands",
+                            NomFrFr = "Îles Féroé"
                         },
                         new
                         {
@@ -936,8 +936,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "FK",
                             Alpha3 = "FLK",
                             Code = 238,
-                            NomEnGb = "Îles (malvinas) Falkland",
-                            NomFrFr = "Falkland Islands"
+                            NomEnGb = "Falkland Islands",
+                            NomFrFr = "Îles (malvinas) Falkland"
                         },
                         new
                         {
@@ -945,8 +945,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "GS",
                             Alpha3 = "SGS",
                             Code = 239,
-                            NomEnGb = "Géorgie du Sud et les Îles Sandwich du Sud",
-                            NomFrFr = "South Georgia and the South Sandwich Islands"
+                            NomEnGb = "South Georgia and the South Sandwich Islands",
+                            NomFrFr = "Géorgie du Sud et les Îles Sandwich du Sud"
                         },
                         new
                         {
@@ -954,8 +954,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "FJ",
                             Alpha3 = "FJI",
                             Code = 242,
-                            NomEnGb = "Fidji",
-                            NomFrFr = "Fiji"
+                            NomEnGb = "Fiji",
+                            NomFrFr = "Fidji"
                         },
                         new
                         {
@@ -963,8 +963,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "FI",
                             Alpha3 = "FIN",
                             Code = 246,
-                            NomEnGb = "Finlande",
-                            NomFrFr = "Finland"
+                            NomEnGb = "Finland",
+                            NomFrFr = "Finlande"
                         },
                         new
                         {
@@ -972,8 +972,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "AX",
                             Alpha3 = "ALA",
                             Code = 248,
-                            NomEnGb = "Îles Åland",
-                            NomFrFr = "Åland Islands"
+                            NomEnGb = "Åland Islands",
+                            NomFrFr = "Îles Åland"
                         },
                         new
                         {
@@ -990,8 +990,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "GF",
                             Alpha3 = "GUF",
                             Code = 254,
-                            NomEnGb = "Guyane Française",
-                            NomFrFr = "French Guiana"
+                            NomEnGb = "French Guiana",
+                            NomFrFr = "Guyane Française"
                         },
                         new
                         {
@@ -999,8 +999,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "PF",
                             Alpha3 = "PYF",
                             Code = 258,
-                            NomEnGb = "Polynésie Française",
-                            NomFrFr = "French Polynesia"
+                            NomEnGb = "French Polynesia",
+                            NomFrFr = "Polynésie Française"
                         },
                         new
                         {
@@ -1008,8 +1008,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "TF",
                             Alpha3 = "ATF",
                             Code = 260,
-                            NomEnGb = "Terres Australes Françaises",
-                            NomFrFr = "French Southern Territories"
+                            NomEnGb = "French Southern Territories",
+                            NomFrFr = "Terres Australes Françaises"
                         },
                         new
                         {
@@ -1035,8 +1035,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "GE",
                             Alpha3 = "GEO",
                             Code = 268,
-                            NomEnGb = "Géorgie",
-                            NomFrFr = "Georgia"
+                            NomEnGb = "Georgia",
+                            NomFrFr = "Géorgie"
                         },
                         new
                         {
@@ -1044,8 +1044,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "GM",
                             Alpha3 = "GMB",
                             Code = 270,
-                            NomEnGb = "Gambie",
-                            NomFrFr = "Gambia"
+                            NomEnGb = "Gambia",
+                            NomFrFr = "Gambie"
                         },
                         new
                         {
@@ -1053,8 +1053,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "PS",
                             Alpha3 = "PSE",
                             Code = 275,
-                            NomEnGb = "Territoire Palestinien Occupé",
-                            NomFrFr = "Occupied Palestinian Territory"
+                            NomEnGb = "Occupied Palestinian Territory",
+                            NomFrFr = "Territoire Palestinien Occupé"
                         },
                         new
                         {
@@ -1062,8 +1062,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "DE",
                             Alpha3 = "DEU",
                             Code = 276,
-                            NomEnGb = "Allemagne",
-                            NomFrFr = "Germany"
+                            NomEnGb = "Germany",
+                            NomFrFr = "Allemagne"
                         },
                         new
                         {
@@ -1098,8 +1098,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "GR",
                             Alpha3 = "GRC",
                             Code = 300,
-                            NomEnGb = "Grèce",
-                            NomFrFr = "Greece"
+                            NomEnGb = "Greece",
+                            NomFrFr = "Grèce"
                         },
                         new
                         {
@@ -1107,8 +1107,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "GL",
                             Alpha3 = "GRL",
                             Code = 304,
-                            NomEnGb = "Groenland",
-                            NomFrFr = "Greenland"
+                            NomEnGb = "Greenland",
+                            NomFrFr = "Groenland"
                         },
                         new
                         {
@@ -1116,8 +1116,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "GD",
                             Alpha3 = "GRD",
                             Code = 308,
-                            NomEnGb = "Grenade",
-                            NomFrFr = "Grenada"
+                            NomEnGb = "Grenada",
+                            NomFrFr = "Grenade"
                         },
                         new
                         {
@@ -1152,8 +1152,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "GN",
                             Alpha3 = "GIN",
                             Code = 324,
-                            NomEnGb = "Guinée",
-                            NomFrFr = "Guinea"
+                            NomEnGb = "Guinea",
+                            NomFrFr = "Guinée"
                         },
                         new
                         {
@@ -1170,8 +1170,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "HT",
                             Alpha3 = "HTI",
                             Code = 332,
-                            NomEnGb = "Haïti",
-                            NomFrFr = "Haiti"
+                            NomEnGb = "Haiti",
+                            NomFrFr = "Haïti"
                         },
                         new
                         {
@@ -1179,8 +1179,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "HM",
                             Alpha3 = "HMD",
                             Code = 334,
-                            NomEnGb = "Îles Heard et Mcdonald",
-                            NomFrFr = "Heard Island and McDonald Islands"
+                            NomEnGb = "Heard Island and McDonald Islands",
+                            NomFrFr = "Îles Heard et Mcdonald"
                         },
                         new
                         {
@@ -1188,8 +1188,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "VA",
                             Alpha3 = "VAT",
                             Code = 336,
-                            NomEnGb = "Saint-Siège (état de la Cité du Vatican)",
-                            NomFrFr = "Vatican City State"
+                            NomEnGb = "Vatican City State",
+                            NomFrFr = "Saint-Siège (état de la Cité du Vatican)"
                         },
                         new
                         {
@@ -1206,8 +1206,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "HK",
                             Alpha3 = "HKG",
                             Code = 344,
-                            NomEnGb = "Hong-Kong",
-                            NomFrFr = "Hong Kong"
+                            NomEnGb = "Hong Kong",
+                            NomFrFr = "Hong-Kong"
                         },
                         new
                         {
@@ -1215,8 +1215,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "HU",
                             Alpha3 = "HUN",
                             Code = 348,
-                            NomEnGb = "Hongrie",
-                            NomFrFr = "Hungary"
+                            NomEnGb = "Hungary",
+                            NomFrFr = "Hongrie"
                         },
                         new
                         {
@@ -1224,8 +1224,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "IS",
                             Alpha3 = "ISL",
                             Code = 352,
-                            NomEnGb = "Islande",
-                            NomFrFr = "Iceland"
+                            NomEnGb = "Iceland",
+                            NomFrFr = "Islande"
                         },
                         new
                         {
@@ -1233,8 +1233,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "IN",
                             Alpha3 = "IND",
                             Code = 356,
-                            NomEnGb = "Inde",
-                            NomFrFr = "India"
+                            NomEnGb = "India",
+                            NomFrFr = "Inde"
                         },
                         new
                         {
@@ -1242,8 +1242,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "ID",
                             Alpha3 = "IDN",
                             Code = 360,
-                            NomEnGb = "Indonésie",
-                            NomFrFr = "Indonesia"
+                            NomEnGb = "Indonesia",
+                            NomFrFr = "Indonésie"
                         },
                         new
                         {
@@ -1251,8 +1251,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "IR",
                             Alpha3 = "IRN",
                             Code = 364,
-                            NomEnGb = "République Islamique d'Iran",
-                            NomFrFr = "Islamic Republic of Iran"
+                            NomEnGb = "Islamic Republic of Iran",
+                            NomFrFr = "République Islamique d'Iran"
                         },
                         new
                         {
@@ -1269,8 +1269,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "IE",
                             Alpha3 = "IRL",
                             Code = 372,
-                            NomEnGb = "Irlande",
-                            NomFrFr = "Ireland"
+                            NomEnGb = "Ireland",
+                            NomFrFr = "Irlande"
                         },
                         new
                         {
@@ -1278,8 +1278,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "IL",
                             Alpha3 = "ISR",
                             Code = 376,
-                            NomEnGb = "Israël",
-                            NomFrFr = "Israel"
+                            NomEnGb = "Israel",
+                            NomFrFr = "Israël"
                         },
                         new
                         {
@@ -1287,8 +1287,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "IT",
                             Alpha3 = "ITA",
                             Code = 380,
-                            NomEnGb = "Italie",
-                            NomFrFr = "Italy"
+                            NomEnGb = "Italy",
+                            NomFrFr = "Italie"
                         },
                         new
                         {
@@ -1305,8 +1305,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "JM",
                             Alpha3 = "JAM",
                             Code = 388,
-                            NomEnGb = "Jamaïque",
-                            NomFrFr = "Jamaica"
+                            NomEnGb = "Jamaica",
+                            NomFrFr = "Jamaïque"
                         },
                         new
                         {
@@ -1314,8 +1314,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "JP",
                             Alpha3 = "JPN",
                             Code = 392,
-                            NomEnGb = "Japon",
-                            NomFrFr = "Japan"
+                            NomEnGb = "Japan",
+                            NomFrFr = "Japon"
                         },
                         new
                         {
@@ -1332,8 +1332,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "JO",
                             Alpha3 = "JOR",
                             Code = 400,
-                            NomEnGb = "Jordanie",
-                            NomFrFr = "Jordan"
+                            NomEnGb = "Jordan",
+                            NomFrFr = "Jordanie"
                         },
                         new
                         {
@@ -1350,8 +1350,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "KP",
                             Alpha3 = "PRK",
                             Code = 408,
-                            NomEnGb = "République Populaire Démocratique de Corée",
-                            NomFrFr = "Democratic People's Republic of Korea"
+                            NomEnGb = "Democratic People's Republic of Korea",
+                            NomFrFr = "République Populaire Démocratique de Corée"
                         },
                         new
                         {
@@ -1359,8 +1359,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "KR",
                             Alpha3 = "KOR",
                             Code = 410,
-                            NomEnGb = "République de Corée",
-                            NomFrFr = "Republic of Korea"
+                            NomEnGb = "Republic of Korea",
+                            NomFrFr = "République de Corée"
                         },
                         new
                         {
@@ -1368,8 +1368,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "KW",
                             Alpha3 = "KWT",
                             Code = 414,
-                            NomEnGb = "Koweït",
-                            NomFrFr = "Kuwait"
+                            NomEnGb = "Kuwait",
+                            NomFrFr = "Koweït"
                         },
                         new
                         {
@@ -1377,8 +1377,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "KG",
                             Alpha3 = "KGZ",
                             Code = 417,
-                            NomEnGb = "Kirghizistan",
-                            NomFrFr = "Kyrgyzstan"
+                            NomEnGb = "Kyrgyzstan",
+                            NomFrFr = "Kirghizistan"
                         },
                         new
                         {
@@ -1386,8 +1386,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "LA",
                             Alpha3 = "LAO",
                             Code = 418,
-                            NomEnGb = "République Démocratique Populaire Lao",
-                            NomFrFr = "Lao People's Democratic Republic"
+                            NomEnGb = "Lao People's Democratic Republic",
+                            NomFrFr = "République Démocratique Populaire Lao"
                         },
                         new
                         {
@@ -1395,8 +1395,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "LB",
                             Alpha3 = "LBN",
                             Code = 422,
-                            NomEnGb = "Liban",
-                            NomFrFr = "Lebanon"
+                            NomEnGb = "Lebanon",
+                            NomFrFr = "Liban"
                         },
                         new
                         {
@@ -1413,8 +1413,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "LV",
                             Alpha3 = "LVA",
                             Code = 428,
-                            NomEnGb = "Lettonie",
-                            NomFrFr = "Latvia"
+                            NomEnGb = "Latvia",
+                            NomFrFr = "Lettonie"
                         },
                         new
                         {
@@ -1422,8 +1422,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "LR",
                             Alpha3 = "LBR",
                             Code = 430,
-                            NomEnGb = "Libéria",
-                            NomFrFr = "Liberia"
+                            NomEnGb = "Liberia",
+                            NomFrFr = "Libéria"
                         },
                         new
                         {
@@ -1431,8 +1431,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "LY",
                             Alpha3 = "LBY",
                             Code = 434,
-                            NomEnGb = "Jamahiriya Arabe Libyenne",
-                            NomFrFr = "Libyan Arab Jamahiriya"
+                            NomEnGb = "Libyan Arab Jamahiriya",
+                            NomFrFr = "Jamahiriya Arabe Libyenne"
                         },
                         new
                         {
@@ -1449,8 +1449,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "LT",
                             Alpha3 = "LTU",
                             Code = 440,
-                            NomEnGb = "Lituanie",
-                            NomFrFr = "Lithuania"
+                            NomEnGb = "Lithuania",
+                            NomFrFr = "Lituanie"
                         },
                         new
                         {
@@ -1494,8 +1494,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "MY",
                             Alpha3 = "MYS",
                             Code = 458,
-                            NomEnGb = "Malaisie",
-                            NomFrFr = "Malaysia"
+                            NomEnGb = "Malaysia",
+                            NomFrFr = "Malaisie"
                         },
                         new
                         {
@@ -1521,8 +1521,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "MT",
                             Alpha3 = "MLT",
                             Code = 470,
-                            NomEnGb = "Malte",
-                            NomFrFr = "Malta"
+                            NomEnGb = "Malta",
+                            NomFrFr = "Malte"
                         },
                         new
                         {
@@ -1539,8 +1539,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "MR",
                             Alpha3 = "MRT",
                             Code = 478,
-                            NomEnGb = "Mauritanie",
-                            NomFrFr = "Mauritania"
+                            NomEnGb = "Mauritania",
+                            NomFrFr = "Mauritanie"
                         },
                         new
                         {
@@ -1548,8 +1548,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "MU",
                             Alpha3 = "MUS",
                             Code = 480,
-                            NomEnGb = "Maurice",
-                            NomFrFr = "Mauritius"
+                            NomEnGb = "Mauritius",
+                            NomFrFr = "Maurice"
                         },
                         new
                         {
@@ -1557,8 +1557,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "MX",
                             Alpha3 = "MEX",
                             Code = 484,
-                            NomEnGb = "Mexique",
-                            NomFrFr = "Mexico"
+                            NomEnGb = "Mexico",
+                            NomFrFr = "Mexique"
                         },
                         new
                         {
@@ -1575,8 +1575,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "MN",
                             Alpha3 = "MNG",
                             Code = 496,
-                            NomEnGb = "Mongolie",
-                            NomFrFr = "Mongolia"
+                            NomEnGb = "Mongolia",
+                            NomFrFr = "Mongolie"
                         },
                         new
                         {
@@ -1584,8 +1584,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "MD",
                             Alpha3 = "MDA",
                             Code = 498,
-                            NomEnGb = "République de Moldova",
-                            NomFrFr = "Republic of Moldova"
+                            NomEnGb = "Republic of Moldova",
+                            NomFrFr = "République de Moldova"
                         },
                         new
                         {
@@ -1602,8 +1602,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "MA",
                             Alpha3 = "MAR",
                             Code = 504,
-                            NomEnGb = "Maroc",
-                            NomFrFr = "Morocco"
+                            NomEnGb = "Morocco",
+                            NomFrFr = "Maroc"
                         },
                         new
                         {
@@ -1629,8 +1629,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "NA",
                             Alpha3 = "NAM",
                             Code = 516,
-                            NomEnGb = "Namibie",
-                            NomFrFr = "Namibia"
+                            NomEnGb = "Namibia",
+                            NomFrFr = "Namibie"
                         },
                         new
                         {
@@ -1647,8 +1647,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "NP",
                             Alpha3 = "NPL",
                             Code = 524,
-                            NomEnGb = "Népal",
-                            NomFrFr = "Nepal"
+                            NomEnGb = "Nepal",
+                            NomFrFr = "Népal"
                         },
                         new
                         {
@@ -1656,8 +1656,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "NL",
                             Alpha3 = "NLD",
                             Code = 528,
-                            NomEnGb = "Pays-Bas",
-                            NomFrFr = "Netherlands"
+                            NomEnGb = "Netherlands",
+                            NomFrFr = "Pays-Bas"
                         },
                         new
                         {
@@ -1665,8 +1665,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "AN",
                             Alpha3 = "ANT",
                             Code = 530,
-                            NomEnGb = "Antilles Néerlandaises",
-                            NomFrFr = "Netherlands Antilles"
+                            NomEnGb = "Netherlands Antilles",
+                            NomFrFr = "Antilles Néerlandaises"
                         },
                         new
                         {
@@ -1683,8 +1683,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "NC",
                             Alpha3 = "NCL",
                             Code = 540,
-                            NomEnGb = "Nouvelle-Calédonie",
-                            NomFrFr = "New Caledonia"
+                            NomEnGb = "New Caledonia",
+                            NomFrFr = "Nouvelle-Calédonie"
                         },
                         new
                         {
@@ -1701,8 +1701,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "NZ",
                             Alpha3 = "NZL",
                             Code = 554,
-                            NomEnGb = "Nouvelle-Zélande",
-                            NomFrFr = "New Zealand"
+                            NomEnGb = "New Zealand",
+                            NomFrFr = "Nouvelle-Zélande"
                         },
                         new
                         {
@@ -1728,8 +1728,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "NG",
                             Alpha3 = "NGA",
                             Code = 566,
-                            NomEnGb = "Nigéria",
-                            NomFrFr = "Nigeria"
+                            NomEnGb = "Nigeria",
+                            NomFrFr = "Nigéria"
                         },
                         new
                         {
@@ -1737,8 +1737,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "NU",
                             Alpha3 = "NIU",
                             Code = 570,
-                            NomEnGb = "Niué",
-                            NomFrFr = "Niue"
+                            NomEnGb = "Niue",
+                            NomFrFr = "Niué"
                         },
                         new
                         {
@@ -1746,8 +1746,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "NF",
                             Alpha3 = "NFK",
                             Code = 574,
-                            NomEnGb = "Île Norfolk",
-                            NomFrFr = "Norfolk Island"
+                            NomEnGb = "Norfolk Island",
+                            NomFrFr = "Île Norfolk"
                         },
                         new
                         {
@@ -1755,8 +1755,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "NO",
                             Alpha3 = "NOR",
                             Code = 578,
-                            NomEnGb = "Norvège",
-                            NomFrFr = "Norway"
+                            NomEnGb = "Norway",
+                            NomFrFr = "Norvège"
                         },
                         new
                         {
@@ -1764,8 +1764,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "MP",
                             Alpha3 = "MNP",
                             Code = 580,
-                            NomEnGb = "Îles Mariannes du Nord",
-                            NomFrFr = "Northern Mariana Islands"
+                            NomEnGb = "Northern Mariana Islands",
+                            NomFrFr = "Îles Mariannes du Nord"
                         },
                         new
                         {
@@ -1773,8 +1773,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "UM",
                             Alpha3 = "UMI",
                             Code = 581,
-                            NomEnGb = "Îles Mineures Éloignées des États-Unis",
-                            NomFrFr = "United States Minor Outlying Islands"
+                            NomEnGb = "United States Minor Outlying Islands",
+                            NomFrFr = "Îles Mineures Éloignées des États-Unis"
                         },
                         new
                         {
@@ -1782,8 +1782,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "FM",
                             Alpha3 = "FSM",
                             Code = 583,
-                            NomEnGb = "États Fédérés de Micronésie",
-                            NomFrFr = "Federated States of Micronesia"
+                            NomEnGb = "Federated States of Micronesia",
+                            NomFrFr = "États Fédérés de Micronésie"
                         },
                         new
                         {
@@ -1791,8 +1791,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "MH",
                             Alpha3 = "MHL",
                             Code = 584,
-                            NomEnGb = "Îles Marshall",
-                            NomFrFr = "Marshall Islands"
+                            NomEnGb = "Marshall Islands",
+                            NomFrFr = "Îles Marshall"
                         },
                         new
                         {
@@ -1800,8 +1800,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "PW",
                             Alpha3 = "PLW",
                             Code = 585,
-                            NomEnGb = "Palaos",
-                            NomFrFr = "Palau"
+                            NomEnGb = "Palau",
+                            NomFrFr = "Palaos"
                         },
                         new
                         {
@@ -1827,8 +1827,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "PG",
                             Alpha3 = "PNG",
                             Code = 598,
-                            NomEnGb = "Papouasie-Nouvelle-Guinée",
-                            NomFrFr = "Papua New Guinea"
+                            NomEnGb = "Papua New Guinea",
+                            NomFrFr = "Papouasie-Nouvelle-Guinée"
                         },
                         new
                         {
@@ -1845,8 +1845,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "PE",
                             Alpha3 = "PER",
                             Code = 604,
-                            NomEnGb = "Pérou",
-                            NomFrFr = "Peru"
+                            NomEnGb = "Peru",
+                            NomFrFr = "Pérou"
                         },
                         new
                         {
@@ -1872,8 +1872,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "PL",
                             Alpha3 = "POL",
                             Code = 616,
-                            NomEnGb = "Pologne",
-                            NomFrFr = "Poland"
+                            NomEnGb = "Poland",
+                            NomFrFr = "Pologne"
                         },
                         new
                         {
@@ -1890,8 +1890,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "GW",
                             Alpha3 = "GNB",
                             Code = 624,
-                            NomEnGb = "Guinée-Bissau",
-                            NomFrFr = "Guinea-Bissau"
+                            NomEnGb = "Guinea-Bissau",
+                            NomFrFr = "Guinée-Bissau"
                         },
                         new
                         {
@@ -1908,8 +1908,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "PR",
                             Alpha3 = "PRI",
                             Code = 630,
-                            NomEnGb = "Porto Rico",
-                            NomFrFr = "Puerto Rico"
+                            NomEnGb = "Puerto Rico",
+                            NomFrFr = "Porto Rico"
                         },
                         new
                         {
@@ -1935,8 +1935,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "RO",
                             Alpha3 = "ROU",
                             Code = 642,
-                            NomEnGb = "Roumanie",
-                            NomFrFr = "Romania"
+                            NomEnGb = "Romania",
+                            NomFrFr = "Roumanie"
                         },
                         new
                         {
@@ -1944,8 +1944,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "RU",
                             Alpha3 = "RUS",
                             Code = 643,
-                            NomEnGb = "Fédération de Russie",
-                            NomFrFr = "Russian Federation"
+                            NomEnGb = "Russian Federation",
+                            NomFrFr = "Fédération de Russie"
                         },
                         new
                         {
@@ -1962,8 +1962,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "SH",
                             Alpha3 = "SHN",
                             Code = 654,
-                            NomEnGb = "Sainte-Hélène",
-                            NomFrFr = "Saint Helena"
+                            NomEnGb = "Saint Helena",
+                            NomFrFr = "Sainte-Hélène"
                         },
                         new
                         {
@@ -1971,8 +1971,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "KN",
                             Alpha3 = "KNA",
                             Code = 659,
-                            NomEnGb = "Saint-Kitts-et-Nevis",
-                            NomFrFr = "Saint Kitts and Nevis"
+                            NomEnGb = "Saint Kitts and Nevis",
+                            NomFrFr = "Saint-Kitts-et-Nevis"
                         },
                         new
                         {
@@ -1989,8 +1989,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "LC",
                             Alpha3 = "LCA",
                             Code = 662,
-                            NomEnGb = "Sainte-Lucie",
-                            NomFrFr = "Saint Lucia"
+                            NomEnGb = "Saint Lucia",
+                            NomFrFr = "Sainte-Lucie"
                         },
                         new
                         {
@@ -1998,8 +1998,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "PM",
                             Alpha3 = "SPM",
                             Code = 666,
-                            NomEnGb = "Saint-Pierre-et-Miquelon",
-                            NomFrFr = "Saint-Pierre and Miquelon"
+                            NomEnGb = "Saint-Pierre and Miquelon",
+                            NomFrFr = "Saint-Pierre-et-Miquelon"
                         },
                         new
                         {
@@ -2007,8 +2007,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "VC",
                             Alpha3 = "VCT",
                             Code = 670,
-                            NomEnGb = "Saint-Vincent-et-les Grenadines",
-                            NomFrFr = "Saint Vincent and the Grenadines"
+                            NomEnGb = "Saint Vincent and the Grenadines",
+                            NomFrFr = "Saint-Vincent-et-les Grenadines"
                         },
                         new
                         {
@@ -2016,8 +2016,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "SM",
                             Alpha3 = "SMR",
                             Code = 674,
-                            NomEnGb = "Saint-Marin",
-                            NomFrFr = "San Marino"
+                            NomEnGb = "San Marino",
+                            NomFrFr = "Saint-Marin"
                         },
                         new
                         {
@@ -2025,8 +2025,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "ST",
                             Alpha3 = "STP",
                             Code = 678,
-                            NomEnGb = "Sao Tomé-et-Principe",
-                            NomFrFr = "Sao Tome and Principe"
+                            NomEnGb = "Sao Tome and Principe",
+                            NomFrFr = "Sao Tomé-et-Principe"
                         },
                         new
                         {
@@ -2034,8 +2034,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "SA",
                             Alpha3 = "SAU",
                             Code = 682,
-                            NomEnGb = "Arabie Saoudite",
-                            NomFrFr = "Saudi Arabia"
+                            NomEnGb = "Saudi Arabia",
+                            NomFrFr = "Arabie Saoudite"
                         },
                         new
                         {
@@ -2043,8 +2043,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "SN",
                             Alpha3 = "SEN",
                             Code = 686,
-                            NomEnGb = "Sénégal",
-                            NomFrFr = "Senegal"
+                            NomEnGb = "Senegal",
+                            NomFrFr = "Sénégal"
                         },
                         new
                         {
@@ -2070,8 +2070,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "SG",
                             Alpha3 = "SGP",
                             Code = 702,
-                            NomEnGb = "Singapour",
-                            NomFrFr = "Singapore"
+                            NomEnGb = "Singapore",
+                            NomFrFr = "Singapour"
                         },
                         new
                         {
@@ -2079,8 +2079,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "SK",
                             Alpha3 = "SVK",
                             Code = 703,
-                            NomEnGb = "Slovaquie",
-                            NomFrFr = "Slovakia"
+                            NomEnGb = "Slovakia",
+                            NomFrFr = "Slovaquie"
                         },
                         new
                         {
@@ -2088,8 +2088,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "VN",
                             Alpha3 = "VNM",
                             Code = 704,
-                            NomEnGb = "Viet Nam",
-                            NomFrFr = "Vietnam"
+                            NomEnGb = "Vietnam",
+                            NomFrFr = "Viet Nam"
                         },
                         new
                         {
@@ -2097,8 +2097,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "SI",
                             Alpha3 = "SVN",
                             Code = 705,
-                            NomEnGb = "Slovénie",
-                            NomFrFr = "Slovenia"
+                            NomEnGb = "Slovenia",
+                            NomFrFr = "Slovénie"
                         },
                         new
                         {
@@ -2106,8 +2106,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "SO",
                             Alpha3 = "SOM",
                             Code = 706,
-                            NomEnGb = "Somalie",
-                            NomFrFr = "Somalia"
+                            NomEnGb = "Somalia",
+                            NomFrFr = "Somalie"
                         },
                         new
                         {
@@ -2115,8 +2115,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "ZA",
                             Alpha3 = "ZAF",
                             Code = 710,
-                            NomEnGb = "Afrique du Sud",
-                            NomFrFr = "South Africa"
+                            NomEnGb = "South Africa",
+                            NomFrFr = "Afrique du Sud"
                         },
                         new
                         {
@@ -2133,8 +2133,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "ES",
                             Alpha3 = "ESP",
                             Code = 724,
-                            NomEnGb = "Espagne",
-                            NomFrFr = "Spain"
+                            NomEnGb = "Spain",
+                            NomFrFr = "Espagne"
                         },
                         new
                         {
@@ -2142,8 +2142,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "EH",
                             Alpha3 = "ESH",
                             Code = 732,
-                            NomEnGb = "Sahara Occidental",
-                            NomFrFr = "Western Sahara"
+                            NomEnGb = "Western Sahara",
+                            NomFrFr = "Sahara Occidental"
                         },
                         new
                         {
@@ -2151,8 +2151,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "SD",
                             Alpha3 = "SDN",
                             Code = 736,
-                            NomEnGb = "Soudan",
-                            NomFrFr = "Sudan"
+                            NomEnGb = "Sudan",
+                            NomFrFr = "Soudan"
                         },
                         new
                         {
@@ -2169,8 +2169,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "SJ",
                             Alpha3 = "SJM",
                             Code = 744,
-                            NomEnGb = "Svalbard etÎle Jan Mayen",
-                            NomFrFr = "Svalbard and Jan Mayen"
+                            NomEnGb = "Svalbard and Jan Mayen",
+                            NomFrFr = "Svalbard etÎle Jan Mayen"
                         },
                         new
                         {
@@ -2187,8 +2187,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "SE",
                             Alpha3 = "SWE",
                             Code = 752,
-                            NomEnGb = "Suède",
-                            NomFrFr = "Sweden"
+                            NomEnGb = "Sweden",
+                            NomFrFr = "Suède"
                         },
                         new
                         {
@@ -2196,8 +2196,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "CH",
                             Alpha3 = "CHE",
                             Code = 756,
-                            NomEnGb = "Suisse",
-                            NomFrFr = "Switzerland"
+                            NomEnGb = "Switzerland",
+                            NomFrFr = "Suisse"
                         },
                         new
                         {
@@ -2205,8 +2205,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "SY",
                             Alpha3 = "SYR",
                             Code = 760,
-                            NomEnGb = "République Arabe Syrienne",
-                            NomFrFr = "Syrian Arab Republic"
+                            NomEnGb = "Syrian Arab Republic",
+                            NomFrFr = "République Arabe Syrienne"
                         },
                         new
                         {
@@ -2214,8 +2214,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "TJ",
                             Alpha3 = "TJK",
                             Code = 762,
-                            NomEnGb = "Tadjikistan",
-                            NomFrFr = "Tajikistan"
+                            NomEnGb = "Tajikistan",
+                            NomFrFr = "Tadjikistan"
                         },
                         new
                         {
@@ -2223,8 +2223,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "TH",
                             Alpha3 = "THA",
                             Code = 764,
-                            NomEnGb = "Thaïlande",
-                            NomFrFr = "Thailand"
+                            NomEnGb = "Thailand",
+                            NomFrFr = "Thaïlande"
                         },
                         new
                         {
@@ -2259,8 +2259,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "TT",
                             Alpha3 = "TTO",
                             Code = 780,
-                            NomEnGb = "Trinité-et-Tobago",
-                            NomFrFr = "Trinidad and Tobago"
+                            NomEnGb = "Trinidad and Tobago",
+                            NomFrFr = "Trinité-et-Tobago"
                         },
                         new
                         {
@@ -2268,8 +2268,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "AE",
                             Alpha3 = "ARE",
                             Code = 784,
-                            NomEnGb = "Émirats Arabes Unis",
-                            NomFrFr = "United Arab Emirates"
+                            NomEnGb = "United Arab Emirates",
+                            NomFrFr = "Émirats Arabes Unis"
                         },
                         new
                         {
@@ -2277,8 +2277,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "TN",
                             Alpha3 = "TUN",
                             Code = 788,
-                            NomEnGb = "Tunisie",
-                            NomFrFr = "Tunisia"
+                            NomEnGb = "Tunisia",
+                            NomFrFr = "Tunisie"
                         },
                         new
                         {
@@ -2286,8 +2286,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "TR",
                             Alpha3 = "TUR",
                             Code = 792,
-                            NomEnGb = "Turquie",
-                            NomFrFr = "Turkey"
+                            NomEnGb = "Turkey",
+                            NomFrFr = "Turquie"
                         },
                         new
                         {
@@ -2295,8 +2295,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "TM",
                             Alpha3 = "TKM",
                             Code = 795,
-                            NomEnGb = "Turkménistan",
-                            NomFrFr = "Turkmenistan"
+                            NomEnGb = "Turkmenistan",
+                            NomFrFr = "Turkménistan"
                         },
                         new
                         {
@@ -2304,8 +2304,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "TC",
                             Alpha3 = "TCA",
                             Code = 796,
-                            NomEnGb = "Îles Turks et Caïques",
-                            NomFrFr = "Turks and Caicos Islands"
+                            NomEnGb = "Turks and Caicos Islands",
+                            NomFrFr = "Îles Turks et Caïques"
                         },
                         new
                         {
@@ -2322,8 +2322,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "UG",
                             Alpha3 = "UGA",
                             Code = 800,
-                            NomEnGb = "Ouganda",
-                            NomFrFr = "Uganda"
+                            NomEnGb = "Uganda",
+                            NomFrFr = "Ouganda"
                         },
                         new
                         {
@@ -2340,8 +2340,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "MK",
                             Alpha3 = "MKD",
                             Code = 807,
-                            NomEnGb = "L'ex-République Yougoslave de Macédoine",
-                            NomFrFr = "The Former Yugoslav Republic of Macedonia"
+                            NomEnGb = "The Former Yugoslav Republic of Macedonia",
+                            NomFrFr = "L'ex-République Yougoslave de Macédoine"
                         },
                         new
                         {
@@ -2349,8 +2349,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "EG",
                             Alpha3 = "EGY",
                             Code = 818,
-                            NomEnGb = "Égypte",
-                            NomFrFr = "Egypt"
+                            NomEnGb = "Egypt",
+                            NomFrFr = "Égypte"
                         },
                         new
                         {
@@ -2358,8 +2358,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "GB",
                             Alpha3 = "GBR",
                             Code = 826,
-                            NomEnGb = "Royaume-Uni",
-                            NomFrFr = "United Kingdom"
+                            NomEnGb = "United Kingdom",
+                            NomFrFr = "Royaume-Uni"
                         },
                         new
                         {
@@ -2367,8 +2367,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "IM",
                             Alpha3 = "IMN",
                             Code = 833,
-                            NomEnGb = "Île de Man",
-                            NomFrFr = "Isle of Man"
+                            NomEnGb = "Isle of Man",
+                            NomFrFr = "Île de Man"
                         },
                         new
                         {
@@ -2376,8 +2376,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "TZ",
                             Alpha3 = "TZA",
                             Code = 834,
-                            NomEnGb = "République-Unie de Tanzanie",
-                            NomFrFr = "United Republic Of Tanzania"
+                            NomEnGb = "United Republic Of Tanzania",
+                            NomFrFr = "République-Unie de Tanzanie"
                         },
                         new
                         {
@@ -2385,8 +2385,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "US",
                             Alpha3 = "USA",
                             Code = 840,
-                            NomEnGb = "États-Unis",
-                            NomFrFr = "United States"
+                            NomEnGb = "United States",
+                            NomFrFr = "États-Unis"
                         },
                         new
                         {
@@ -2394,8 +2394,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "VI",
                             Alpha3 = "VIR",
                             Code = 850,
-                            NomEnGb = "Îles Vierges des États-Unis",
-                            NomFrFr = "U.S. Virgin Islands"
+                            NomEnGb = "U.S. Virgin Islands",
+                            NomFrFr = "Îles Vierges des États-Unis"
                         },
                         new
                         {
@@ -2421,8 +2421,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "UZ",
                             Alpha3 = "UZB",
                             Code = 860,
-                            NomEnGb = "Ouzbékistan",
-                            NomFrFr = "Uzbekistan"
+                            NomEnGb = "Uzbekistan",
+                            NomFrFr = "Ouzbékistan"
                         },
                         new
                         {
@@ -2439,8 +2439,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "WF",
                             Alpha3 = "WLF",
                             Code = 876,
-                            NomEnGb = "Wallis et Futuna",
-                            NomFrFr = "Wallis and Futuna"
+                            NomEnGb = "Wallis and Futuna",
+                            NomFrFr = "Wallis et Futuna"
                         },
                         new
                         {
@@ -2457,8 +2457,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "YE",
                             Alpha3 = "YEM",
                             Code = 887,
-                            NomEnGb = "Yémen",
-                            NomFrFr = "Yemen"
+                            NomEnGb = "Yemen",
+                            NomFrFr = "Yémen"
                         },
                         new
                         {
@@ -2466,8 +2466,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "CS",
                             Alpha3 = "SCG",
                             Code = 891,
-                            NomEnGb = "Serbie-et-Monténégro",
-                            NomFrFr = "Serbia and Montenegro"
+                            NomEnGb = "Serbia and Montenegro",
+                            NomFrFr = "Serbie-et-Monténégro"
                         },
                         new
                         {
@@ -2475,8 +2475,8 @@ namespace RolandGarros.Data.Migrations
                             Alpha2 = "ZM",
                             Alpha3 = "ZMB",
                             Code = 894,
-                            NomEnGb = "Zambie",
-                            NomFrFr = "Zambia"
+                            NomEnGb = "Zambia",
+                            NomFrFr = "Zambie"
                         });
                 });
 

@@ -23,7 +23,7 @@ namespace RolandGarros.Controllers
         // GET: Joueurs
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Joueurs.ToListAsync());
+              return View(await _context.Joueurs.Include(j=>j.Nationalite).ToListAsync());
         }
 
         // GET: Joueurs/Details/5
@@ -56,16 +56,26 @@ namespace RolandGarros.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(JoueurCreateViewModel joueur)
+        public async Task<IActionResult> Create(JoueurCreateViewModel joueurViewModel)
         {
             //TODO : Ajout d'un joueur dans la BDD, création d'un objet joueur
             if (ModelState.IsValid)
             {
+                Pays? pays = _context.Pays.SingleOrDefault(p=>p.Id==joueurViewModel.NationaliteId);
+                Joueur joueur = new Joueur()
+                {
+                    Nom = joueurViewModel.Nom,
+                    Prenom = joueurViewModel.Prenom,
+                    Sexe = joueurViewModel.Sexe,
+                    DateNaissance = joueurViewModel.DateNaissance.ToDateTime(TimeOnly.MinValue),
+                    Classement = joueurViewModel.Classement,
+                    Nationalite = pays
+                };
                 _context.Add(joueur);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(joueur);
+            return View(joueurViewModel);
         }
 
         // GET: Joueurs/Edit/5

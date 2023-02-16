@@ -3,16 +3,16 @@ using System.ComponentModel.DataAnnotations;
 
 namespace RolandGarros.Models
 {
-    public class JoueurCreateViewModel
+    public class JoueurEditViewModel
     {
         public int Id { get; set; }
 
         [Required]
         [StringLength(30)]
         [Display(
-            Name ="LabelJoueurNom",
-            Prompt ="LabelJoueurNomPrompt",
-            ResourceType =typeof(Properties.Resources)
+            Name = "LabelJoueurNom",
+            Prompt = "LabelJoueurNomPrompt",
+            ResourceType = typeof(Properties.Resources)
             )]
         public string Nom { get; set; } = null!;
 
@@ -55,10 +55,5 @@ namespace RolandGarros.Models
             ResourceType = typeof(Properties.Resources)
             )]
         public int? Classement { get; set; }
-
-        public JoueurCreateViewModel()
-        {
-            DateNaissance = DateOnly.FromDateTime(DateTime.Now);
-        }
     }
 }
