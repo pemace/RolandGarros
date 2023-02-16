@@ -47,6 +47,7 @@ namespace RolandGarros.Controllers
         // GET: Joueurs/Create
         public IActionResult Create()
         {
+            ViewData["Pays"]= new SelectList(_context.Pays, "Id", "NomFrFr"); 
             return View(new JoueurCreateViewModel());
         }
 
