@@ -34,14 +34,24 @@ namespace RolandGarros.Controllers
                 return NotFound();
             }
 
-            var joueur = await _context.Joueurs
+            var joueur = await _context.Joueurs.Include(j=>j.Nationalite)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (joueur == null)
             {
                 return NotFound();
             }
 
-            return View(joueur);
+            JoueurDetailsViewModel joueurDetailsViewModel = new JoueurDetailsViewModel()
+            {
+                Nom=joueur.Nom,
+                Prenom=joueur.Prenom,
+                DateNaissance=joueur.DateNaissance,
+                Classement=joueur.Classement,
+                Nationalite=joueur.Nationalite.NomFrFr,
+                Sexe=joueur.Sexe
+            };
+
+            return View(joueurDetailsViewModel);
         }
 
         // GET: Joueurs/Create
