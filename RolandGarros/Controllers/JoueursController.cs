@@ -62,12 +62,16 @@ namespace RolandGarros.Controllers
             if (ModelState.IsValid)
             {
                 Pays? pays = _context.Pays.SingleOrDefault(p=>p.Id==joueurViewModel.NationaliteId);
+                if(pays==null)
+                {
+                    return NotFound();
+                }
                 Joueur joueur = new Joueur()
                 {
                     Nom = joueurViewModel.Nom,
                     Prenom = joueurViewModel.Prenom,
                     Sexe = joueurViewModel.Sexe,
-                    DateNaissance = joueurViewModel.DateNaissance.ToDateTime(TimeOnly.MinValue),
+                    DateNaissance = joueurViewModel.DateNaissance,
                     Classement = joueurViewModel.Classement,
                     Nationalite = pays
                 };
@@ -86,12 +90,23 @@ namespace RolandGarros.Controllers
                 return NotFound();
             }
 
-            var joueur = await _context.Joueurs.FindAsync(id);
+            var joueur = await _context.Joueurs.Include(j=>j.Nationalite).SingleOrDefaultAsync(j=>j.Id==id);
             if (joueur == null)
             {
                 return NotFound();
             }
-            return View(joueur);
+            JoueurEditViewModel joueurEditViewModel = new JoueurEditViewModel()
+            {
+                Id=joueur.Id,
+                Nom=joueur.Nom,
+                Prenom=joueur.Prenom,
+                Classement=joueur.Classement,
+                DateNaissance=joueur.DateNaissance,
+                Sexe=joueur.Sexe,
+                NationaliteId=joueur.Nationalite.Id
+            };
+            ViewData["Pays"] = new SelectList(_context.Pays, "Id", "NomFrFr");
+            return View(joueurEditViewModel);
         }
 
         // POST: Joueurs/Edit/5
@@ -99,9 +114,9 @@ namespace RolandGarros.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Sexe,DateNaissance,Classement,Nom,Prenom,Id")] Joueur joueur)
+        public async Task<IActionResult> Edit(int id, JoueurEditViewModel joueurEditViewModel)
         {
-            if (id != joueur.Id)
+            if (id != joueurEditViewModel.Id)
             {
                 return NotFound();
             }
@@ -110,12 +125,27 @@ namespace RolandGarros.Controllers
             {
                 try
                 {
+                    Pays? pays = _context.Pays.SingleOrDefault(p => p.Id == joueurEditViewModel.NationaliteId);
+                    if (pays == null)
+                    {
+                        return NotFound();
+                    }
+                    Joueur joueur = new Joueur()
+                    {
+                        Id=joueurEditViewModel.Id,
+                        Nom=joueurEditViewModel.Nom,
+                        Prenom= joueurEditViewModel.Prenom,
+                        Classement=joueurEditViewModel.Classement,
+                        DateNaissance=joueurEditViewModel.DateNaissance, //TODO: Conversion date
+                        Nationalite=pays,
+                        Sexe=joueurEditViewModel.Sexe
+                    };
                     _context.Update(joueur);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!JoueurExists(joueur.Id))
+                    if (!JoueurExists(joueurEditViewModel.Id))
                     {
                         return NotFound();
                     }
@@ -126,7 +156,7 @@ namespace RolandGarros.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(joueur);
+            return View(joueurEditViewModel);
         }
 
         // GET: Joueurs/Delete/5

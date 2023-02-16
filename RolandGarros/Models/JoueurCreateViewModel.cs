@@ -47,7 +47,7 @@ namespace RolandGarros.Models
             Prompt = "LabelJoueurDateNaissancePrompt",
             ResourceType = typeof(Properties.Resources)
             )]
-        public DateOnly DateNaissance { get; set; }
+        public DateTime DateNaissance { get; set; }
 
         [Display(
             Name = "LabelJoueurClassement",
@@ -58,7 +58,7 @@ namespace RolandGarros.Models
 
         public JoueurCreateViewModel()
         {
-            DateNaissance = DateOnly.FromDateTime(DateTime.Now);
+            DateNaissance = DateTime.Now;
         }
     }
 }
