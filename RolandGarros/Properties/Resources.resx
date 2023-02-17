@@ -141,6 +141,12 @@
   <data name="LabelJoueurNomPrompt" xml:space="preserve">
     <value>Saisir un nom de famille</value>
   </data>
+  <data name="LabelJoueurPhoto" xml:space="preserve">
+    <value>Photo :</value>
+  </data>
+  <data name="LabelJoueurPhotoPrompt" xml:space="preserve">
+    <value>Selectionner une photo</value>
+  </data>
   <data name="LabelJoueurPrenom" xml:space="preserve">
     <value>Prénom :</value>
   </data>
@@ -151,6 +157,6 @@
     <value>Sexe :</value>
   </data>
   <data name="LabelJoueurSexePrompt" xml:space="preserve">
-    <value>Choisir un sexe</value>
+    <value>Selectionner le sexe</value>
   </data>
 </root>

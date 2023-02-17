@@ -88,7 +88,8 @@ namespace RolandGarros.Controllers
                     Sexe = joueurViewModel.Sexe,
                     DateNaissance = joueurViewModel.DateNaissance,
                     Classement = joueurViewModel.Classement,
-                    Nationalite = pays
+                    Nationalite = pays,
+                    PhotoUrl = await UploadFile(joueurViewModel.Id, joueurViewModel.Photo)
                 };
                 _context.Add(joueur);
                 await _context.SaveChangesAsync();
@@ -118,7 +119,8 @@ namespace RolandGarros.Controllers
                 Classement=joueur.Classement,
                 DateNaissance=joueur.DateNaissance,
                 Sexe=joueur.Sexe,
-                NationaliteId=joueur.Nationalite.Id
+                NationaliteId=joueur.Nationalite.Id,
+                PhotoUrl = joueur.PhotoUrl
             };
             ViewData["Pays"] = new SelectList(_context.Pays, "Id", "NomFrFr");
             return View(joueurEditViewModel);
@@ -140,6 +142,7 @@ namespace RolandGarros.Controllers
             {
                 try
                 {
+                    var photoUrl = joueurEditViewModel.Photo == null ? joueurEditViewModel.PhotoUrl : await UploadFile(joueurEditViewModel.Id, joueurEditViewModel.Photo);
                     Pays? pays = _context.Pays.SingleOrDefault(p => p.Id == joueurEditViewModel.NationaliteId);
                     if (pays == null)
                     {
@@ -153,7 +156,8 @@ namespace RolandGarros.Controllers
                         Classement=joueurEditViewModel.Classement,
                         DateNaissance=joueurEditViewModel.DateNaissance, //TODO: Conversion date
                         Nationalite=pays,
-                        Sexe=joueurEditViewModel.Sexe
+                        Sexe=joueurEditViewModel.Sexe,
+                        PhotoUrl = photoUrl
                     };
                     _context.Update(joueur);
                     await _context.SaveChangesAsync();

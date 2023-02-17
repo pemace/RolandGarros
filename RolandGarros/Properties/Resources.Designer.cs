@@ -133,6 +133,24 @@ namespace RolandGarros.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Photo :.
+        /// </summary>
+        public static string LabelJoueurPhoto {
+            get {
+                return ResourceManager.GetString("LabelJoueurPhoto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Selectionner une photo.
+        /// </summary>
+        public static string LabelJoueurPhotoPrompt {
+            get {
+                return ResourceManager.GetString("LabelJoueurPhotoPrompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Prénom :.
         /// </summary>
         public static string LabelJoueurPrenom {
@@ -160,7 +178,7 @@ namespace RolandGarros.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Choisir un sexe.
+        ///   Recherche une chaîne localisée semblable à Selectionner le sexe.
         /// </summary>
         public static string LabelJoueurSexePrompt {
             get {

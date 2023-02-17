@@ -55,6 +55,13 @@ namespace RolandGarros.Models
             ResourceType = typeof(Properties.Resources)
             )]
         public int? Classement { get; set; }
+
+        [DataType(DataType.Upload)]
+        [Display(
+            Name = "LabelJoueurPhoto", 
+            Prompt = "LabelJoueurPhotoPrompt",
+            ResourceType = typeof(Properties.Resources)
+            )]
         public IFormFile Photo { get; init; } = null!;
 
         public JoueurCreateViewModel()
