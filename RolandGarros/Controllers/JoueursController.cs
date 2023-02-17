@@ -76,6 +76,7 @@ namespace RolandGarros.Controllers
             //TODO : Ajout d'un joueur dans la BDD, création d'un objet joueur
             if (ModelState.IsValid)
             {
+                var photoUrl = joueurViewModel.Photo == null ? null : await UploadFile(joueurViewModel.Photo);
                 Pays? pays = _context.Pays.SingleOrDefault(p=>p.Id==joueurViewModel.NationaliteId);
                 if(pays==null)
                 {
@@ -89,7 +90,7 @@ namespace RolandGarros.Controllers
                     DateNaissance = joueurViewModel.DateNaissance,
                     Classement = joueurViewModel.Classement,
                     Nationalite = pays,
-                    PhotoUrl = await UploadFile(joueurViewModel.Photo)
+                    PhotoUrl = photoUrl
                 };
                 _context.Add(joueur);
                 await _context.SaveChangesAsync();

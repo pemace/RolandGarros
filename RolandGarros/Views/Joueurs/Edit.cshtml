@@ -71,6 +71,18 @@
         {
             <img src="@Model.PhotoUrl" height="300px" style="text-align:left" />
         }
+        else
+        {
+            @if (Model.Sexe == RolandGarros.Entities.Sexe.Homme)
+            {
+                <img src="~/images/profile-man.svg" height="300px" style="text-align:left" />
+            }
+            else
+            {
+                <img src="~/images/profile-woman.png" height="300px" style="text-align:left" />
+            }
+
+        }
     </div>
 </div>
 
