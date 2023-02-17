@@ -276,6 +276,7 @@ namespace RolandGarros.Data
                             DateNaissance=new DateTime(1983,12,10),
                             NationaliteId=4,
                             Sexe=Sexe.Homme,
+                            Classement=10,
                             PhotoUrl="/images/profiles/rihane.jpg"
                         },
                     new
@@ -286,6 +287,7 @@ namespace RolandGarros.Data
                         DateNaissance = new DateTime(1986, 9, 1),
                         NationaliteId = 75,
                         Sexe = Sexe.Homme,
+                        Classement = 20,
                         PhotoUrl = "/images/profiles/monfils.png"
                     },
                     new
@@ -296,6 +298,7 @@ namespace RolandGarros.Data
                         DateNaissance = new DateTime(1995, 11, 17),
                         NationaliteId = 18,
                         Sexe = Sexe.Femme,
+                        Classement = 100,
                         PhotoUrl = "/images/profiles/mertens.webp"
                     },
                     new
@@ -306,6 +309,7 @@ namespace RolandGarros.Data
                         DateNaissance = new DateTime(1994, 11, 17),
                         NationaliteId = 75,
                         Sexe = Sexe.Femme,
+                        Classement = 30,
                         PhotoUrl = "/images/profiles/garcia.webp"
                     }
                 );
