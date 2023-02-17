@@ -118,45 +118,105 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="LabelJoueurClassement" xml:space="preserve">
-    <value>Classement :</value>
+    <value>Classement</value>
   </data>
   <data name="LabelJoueurClassementPrompt" xml:space="preserve">
     <value>Saisir un classement</value>
   </data>
   <data name="LabelJoueurDateNaissance" xml:space="preserve">
-    <value>Date de naissance :</value>
+    <value>Date de naissance</value>
   </data>
   <data name="LabelJoueurDateNaissancePrompt" xml:space="preserve">
     <value>Choisir une date de naissance</value>
   </data>
   <data name="LabelJoueurNationalite" xml:space="preserve">
-    <value>Nationalité :</value>
+    <value>Nationalité</value>
   </data>
   <data name="LabelJoueurNationalitePrompt" xml:space="preserve">
     <value>Choisir une nationalité</value>
   </data>
   <data name="LabelJoueurNom" xml:space="preserve">
-    <value>Nom :</value>
+    <value>Nom</value>
   </data>
   <data name="LabelJoueurNomPrompt" xml:space="preserve">
     <value>Saisir un nom de famille</value>
   </data>
   <data name="LabelJoueurPhoto" xml:space="preserve">
-    <value>Photo :</value>
+    <value>Photo</value>
   </data>
   <data name="LabelJoueurPhotoPrompt" xml:space="preserve">
     <value>Selectionner une photo</value>
   </data>
   <data name="LabelJoueurPrenom" xml:space="preserve">
-    <value>Prénom :</value>
+    <value>Prénom</value>
   </data>
   <data name="LabelJoueurPrenomPrompt" xml:space="preserve">
     <value>Saisir un prénom</value>
   </data>
   <data name="LabelJoueurSexe" xml:space="preserve">
-    <value>Sexe :</value>
+    <value>Sexe</value>
   </data>
   <data name="LabelJoueurSexePrompt" xml:space="preserve">
     <value>Selectionner le sexe</value>
+  </data>
+  <data name="LabelMatchArbitre" xml:space="preserve">
+    <value>Arbitre</value>
+  </data>
+  <data name="LabelMatchArbitrePrompt" xml:space="preserve">
+    <value>Choisir un arbitre</value>
+  </data>
+  <data name="LabelMatchCourt" xml:space="preserve">
+    <value>Court</value>
+  </data>
+  <data name="LabelMatchCourtPrompt" xml:space="preserve">
+    <value>Choisir un court</value>
+  </data>
+  <data name="LabelMatchDate" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="LabelMatchDatePrompt" xml:space="preserve">
+    <value>Choisir une date</value>
+  </data>
+  <data name="LabelMatchJoueur1" xml:space="preserve">
+    <value>Joueur</value>
+  </data>
+  <data name="LabelMatchJoueur1Prompt" xml:space="preserve">
+    <value>Choisir le premier joueur</value>
+  </data>
+  <data name="LabelMatchJoueur2" xml:space="preserve">
+    <value>Joueur</value>
+  </data>
+  <data name="LabelMatchJoueur2Prompt" xml:space="preserve">
+    <value>Choisir le second joueur</value>
+  </data>
+  <data name="LabelMatchSousTournoi" xml:space="preserve">
+    <value>Sous-tournoi</value>
+  </data>
+  <data name="LabelMatchSousTournoiPrompt" xml:space="preserve">
+    <value>Choisir un sous-tournoi</value>
+  </data>
+  <data name="LabelResultatDuree" xml:space="preserve">
+    <value>Durée</value>
+  </data>
+  <data name="LabelResultatDureePrompt" xml:space="preserve">
+    <value>Saisir une durée</value>
+  </data>
+  <data name="LabelResultatGagnant" xml:space="preserve">
+    <value>Gagnant</value>
+  </data>
+  <data name="LabelResultatGagnantPrompt" xml:space="preserve">
+    <value>Choisir le gagnant</value>
+  </data>
+  <data name="LabelResultatSetsGagnesJoueur1" xml:space="preserve">
+    <value>Résultat</value>
+  </data>
+  <data name="LabelResultatSetsGagnesJoueur1Prompt" xml:space="preserve">
+    <value>Saisir le résultat</value>
+  </data>
+  <data name="LabelResultatSetsGagnesJoueur2" xml:space="preserve">
+    <value>Résultat</value>
+  </data>
+  <data name="LabelResultatSetsGagnesJoueur2Prompt" xml:space="preserve">
+    <value>Saisir le résultat</value>
   </data>
 </root>

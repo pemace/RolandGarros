@@ -12,7 +12,7 @@ using RolandGarros.Data;
 namespace RolandGarros.Data.Migrations
 {
     [DbContext(typeof(TennisContext))]
-    [Migration("20230217002749_RolandGarrosV1")]
+    [Migration("20230217132249_RolandGarrosV1")]
     partial class RolandGarrosV1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -58,14 +58,14 @@ namespace RolandGarros.Data.Migrations
                         new
                         {
                             Id = 1,
-                            NationaliteId = 1,
+                            NationaliteId = 75,
                             Nom = "Dujardin",
                             Prenom = "François"
                         },
                         new
                         {
                             Id = 2,
-                            NationaliteId = 2,
+                            NationaliteId = 4,
                             Nom = "Al Kashi",
                             Prenom = "Youssef"
                         });
@@ -149,6 +149,7 @@ namespace RolandGarros.Data.Migrations
                         new
                         {
                             Id = 1,
+                            Classement = 10,
                             DateNaissance = new DateTime(1983, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             NationaliteId = 4,
                             Nom = "Rihane",
@@ -159,6 +160,7 @@ namespace RolandGarros.Data.Migrations
                         new
                         {
                             Id = 2,
+                            Classement = 20,
                             DateNaissance = new DateTime(1986, 9, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             NationaliteId = 75,
                             Nom = "Monfils",
@@ -169,6 +171,7 @@ namespace RolandGarros.Data.Migrations
                         new
                         {
                             Id = 3,
+                            Classement = 100,
                             DateNaissance = new DateTime(1995, 11, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             NationaliteId = 18,
                             Nom = "Mertens",
@@ -179,6 +182,7 @@ namespace RolandGarros.Data.Migrations
                         new
                         {
                             Id = 4,
+                            Classement = 30,
                             DateNaissance = new DateTime(1994, 11, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             NationaliteId = 75,
                             Nom = "Garcia",
@@ -2503,10 +2507,22 @@ namespace RolandGarros.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<TimeSpan>("Duree")
+                        .HasColumnType("time");
+
                     b.Property<int>("GagnantId")
                         .HasColumnType("int");
 
                     b.Property<int?>("MatchId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("setsGagnesPourGagnant")
+                        .HasColumnType("int");
+
+                    b.Property<int>("setsGagnesPourPerdant")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -2516,6 +2532,18 @@ namespace RolandGarros.Data.Migrations
                     b.HasIndex("MatchId");
 
                     b.ToTable("Resultats");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Date = new DateTime(2022, 6, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Duree = new TimeSpan(0, 1, 0, 0, 0),
+                            GagnantId = 2,
+                            MatchId = 1,
+                            setsGagnesPourGagnant = 6,
+                            setsGagnesPourPerdant = 4
+                        });
                 });
 
             modelBuilder.Entity("RolandGarros.Entities.SousTournoi", b =>

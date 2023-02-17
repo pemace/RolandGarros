@@ -1,4 +1,4 @@
-﻿@model RolandGarros.Entities.Match
+﻿@model RolandGarros.Models.MatchDetailsViewModel
 
 @{
     ViewData["Title"] = "Details";
@@ -17,6 +17,39 @@
             @Html.DisplayFor(model => model.Date)
         </dd>
     </dl>
+    @if (Model.Joueur1.PhotoUrl!=null)
+    {
+        <img src="@Model.Joueur1.PhotoUrl" height="300px" />
+    }
+    else
+    {
+        @if (Model.Joueur1.Sexe == RolandGarros.Entities.Sexe.Homme)
+        {
+            <img src="~/images/profile-man.svg" height="300px" style="text-align:left" />
+        }
+        else
+        {
+            <img src="~/images/profile-woman.png" height="300px" style="text-align:left" />
+        }
+
+    }
+
+    @if (Model.Joueur2.PhotoUrl != null)
+    {
+        <img src="@Model.Joueur2.PhotoUrl" height="300px" />
+    }
+    else
+    {
+        @if (Model.Joueur2.Sexe == RolandGarros.Entities.Sexe.Homme)
+        {
+                    <img src="~/images/profile-man.svg" height="300px" style="text-align:left" />
+        }
+        else
+        {
+                    <img src="~/images/profile-woman.png" height="300px" style="text-align:left" />
+        }
+
+    }
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |

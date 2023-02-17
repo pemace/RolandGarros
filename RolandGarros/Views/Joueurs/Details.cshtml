@@ -28,7 +28,11 @@
                     @Html.DisplayNameFor(model => model.Nationalite)
                 </dt>
                 <dd class="col-sm-8">
-                    @Html.DisplayFor(model => model.Nationalite)
+                    @{
+                        string imageDrapeau = "/images/flags/" + Model.Nationalite.Alpha2 + ".svg";
+                    }
+                    <img src="@imageDrapeau" width="25" />
+                    @Html.DisplayFor(model => model.Nationalite.NomFrFr)
                 </dd>
                 <dt class = "col-sm-4">
                     @Html.DisplayNameFor(model => model.Sexe)

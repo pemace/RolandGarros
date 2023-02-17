@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -26,8 +27,11 @@ namespace RolandGarros.Controllers
             var listeMatchs = await _context.Matchs
                 .Include(m => m.Joueur1)
                 .Include(m => m.Joueur2)
+                .Include(m=>m.Joueur1.Nationalite)
+                .Include(m =>m.Joueur2.Nationalite)
                 .Include(m=>m.Court)
                 .Include(m=>m.Arbitre)
+                .Include(m=>m.SousTournoi)
                 .ToListAsync();
 
             List<MatchsListViewModel> listeAffichage = new List<MatchsListViewModel>();
@@ -96,7 +100,45 @@ namespace RolandGarros.Controllers
                 return NotFound();
             }
 
-            return View(match);
+            var resultat = await _context.Resultats
+                            .Include(r => r.Gagnant)
+                            .Include(r => r.Match)
+                            .SingleOrDefaultAsync(r => r.Match.Id == match.Id);
+
+
+            int? setsGagnesJoueur1;
+            int? setsGagnesJoueur2;
+            if (resultat != null)
+            {
+                setsGagnesJoueur1 = match.Joueur1.Id == resultat.Gagnant.Id ?
+                                        resultat.setsGagnesPourGagnant :
+                                        resultat.setsGagnesPourPerdant;
+                setsGagnesJoueur2 = match.Joueur2.Id == resultat.Gagnant.Id ?
+                                        resultat.setsGagnesPourGagnant :
+                                        resultat.setsGagnesPourPerdant;
+            }
+            else
+            {
+                setsGagnesJoueur1 = null;
+                setsGagnesJoueur2 = null;
+            }
+
+            var modele = new MatchDetailsViewModel()
+            {
+                Id = match.Id,
+                Joueur1 = match.Joueur1,
+                Joueur2 = match.Joueur2,
+                Arbitre = match.Arbitre,
+                Court = match.Court,
+                Date = match.Date,
+                SousTournoi = match.SousTournoi,
+                Duree = resultat == null ? null : resultat.Duree,
+                Gagnant = resultat == null ? null : resultat.Gagnant,
+                SetsGagnesPourJoueur1 = setsGagnesJoueur1,
+                SetsGagnesPourJoueur2 = setsGagnesJoueur2
+            };
+
+            return View(modele);
         }
 
         // GET: Matches/Create

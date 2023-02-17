@@ -34,7 +34,7 @@ namespace RolandGarros.Models
             Prompt = "LabelJoueurNationalitePrompt",
             ResourceType = typeof(Properties.Resources)
             )]
-        public string Nationalite { get; set; } = null!;
+        public Pays Nationalite { get; set; } = null!;
 
         [Required]
         [Display(

@@ -19,7 +19,13 @@
                 @Html.DisplayNameFor(model => model.Joueur1)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.SetsGagnesPourJoueur1)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Joueur2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SetsGagnesPourJoueur2)
             </th>
             <th></th>
         </tr>
@@ -31,12 +37,39 @@
                 @Html.DisplayFor(modelItem => item.Date)
             </td>
             <td>
+                    @{
+                        string imageDrapeau = "/images/flags/" + item.Joueur1.Nationalite.Alpha2 + ".svg";
+                    }
+                    <img src="@imageDrapeau" width="25" />
                     @Html.DisplayFor(modelItem => item.Joueur1.Prenom)
                     @Html.DisplayFor(modelItem => item.Joueur1.Nom)
             </td>
             <td>
+                @if(item.SetsGagnesPourJoueur1!=null)
+                {
+                    @Html.DisplayFor(modelItem => item.SetsGagnesPourJoueur1)
+                }else
+                {
+                    <span>-</span>
+                }
+            </td>
+            <td>
+                @{
+                    imageDrapeau = "/images/flags/" + item.Joueur2.Nationalite.Alpha2 + ".svg";
+                }
+                <img src="@imageDrapeau" width="25" />
                 @Html.DisplayFor(modelItem => item.Joueur2.Prenom)
                 @Html.DisplayFor(modelItem => item.Joueur2.Nom)
+            </td>
+            <td>
+                @if (item.SetsGagnesPourJoueur2 != null)
+                {
+                    @Html.DisplayFor(modelItem => item.SetsGagnesPourJoueur2)
+                }
+                else
+                {
+                    <span>-</span>
+                }
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

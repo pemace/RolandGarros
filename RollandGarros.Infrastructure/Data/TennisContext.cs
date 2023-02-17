@@ -338,8 +338,8 @@ namespace RolandGarros.Data
                 );
 
             modelBuilder.Entity<Arbitre>().HasData(
-                    new { Id = 1, Nom = "Dujardin",Prenom = "François", NationaliteId = 1 },
-                    new { Id = 2, Nom = "Al Kashi",Prenom = "Youssef", NationaliteId = 2 }
+                    new { Id = 1, Nom = "Dujardin",Prenom = "François", NationaliteId = 75 },
+                    new { Id = 2, Nom = "Al Kashi",Prenom = "Youssef", NationaliteId = 4 }
                 );
 
             modelBuilder.Entity<Match>().HasData(
@@ -363,7 +363,17 @@ namespace RolandGarros.Data
                         SousTournoiId = 2
                     }
                 );
-
+            modelBuilder.Entity<Resultat>().HasData(
+                new {
+                    Id=1,
+                    setsGagnesPourGagnant = 6,
+                    setsGagnesPourPerdant = 4,
+                    Duree=new TimeSpan(1,0,0),
+                    Date = new DateTime(2022, 6, 5),
+                    GagnantId=2,
+                    MatchId=1
+                }
+                );
         }
     }
 }

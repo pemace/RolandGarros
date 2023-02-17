@@ -44,6 +44,10 @@
                 @Html.DisplayFor(modelItem => item.Prenom)
             </td>
                 <td>
+                    @{
+                        string imageDrapeau ="/images/flags/"+item.Nationalite.Alpha2+".svg";
+                    }
+                    <img src="@imageDrapeau" width="25"/>
                     @Html.DisplayFor(modelItem => item.Nationalite.NomFrFr)
                 </td>
             <td>

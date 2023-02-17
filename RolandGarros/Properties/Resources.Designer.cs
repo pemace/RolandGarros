@@ -61,7 +61,7 @@ namespace RolandGarros.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Classement :.
+        ///   Recherche une chaîne localisée semblable à Classement.
         /// </summary>
         public static string LabelJoueurClassement {
             get {
@@ -79,7 +79,7 @@ namespace RolandGarros.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Date de naissance :.
+        ///   Recherche une chaîne localisée semblable à Date de naissance.
         /// </summary>
         public static string LabelJoueurDateNaissance {
             get {
@@ -97,7 +97,7 @@ namespace RolandGarros.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Nationalité :.
+        ///   Recherche une chaîne localisée semblable à Nationalité.
         /// </summary>
         public static string LabelJoueurNationalite {
             get {
@@ -115,7 +115,7 @@ namespace RolandGarros.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Nom :.
+        ///   Recherche une chaîne localisée semblable à Nom.
         /// </summary>
         public static string LabelJoueurNom {
             get {
@@ -133,7 +133,7 @@ namespace RolandGarros.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Photo :.
+        ///   Recherche une chaîne localisée semblable à Photo.
         /// </summary>
         public static string LabelJoueurPhoto {
             get {
@@ -151,7 +151,7 @@ namespace RolandGarros.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Prénom :.
+        ///   Recherche une chaîne localisée semblable à Prénom.
         /// </summary>
         public static string LabelJoueurPrenom {
             get {
@@ -169,7 +169,7 @@ namespace RolandGarros.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Sexe :.
+        ///   Recherche une chaîne localisée semblable à Sexe.
         /// </summary>
         public static string LabelJoueurSexe {
             get {
@@ -183,6 +183,186 @@ namespace RolandGarros.Properties {
         public static string LabelJoueurSexePrompt {
             get {
                 return ResourceManager.GetString("LabelJoueurSexePrompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Arbitre.
+        /// </summary>
+        public static string LabelMatchArbitre {
+            get {
+                return ResourceManager.GetString("LabelMatchArbitre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Choisir un arbitre.
+        /// </summary>
+        public static string LabelMatchArbitrePrompt {
+            get {
+                return ResourceManager.GetString("LabelMatchArbitrePrompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Court.
+        /// </summary>
+        public static string LabelMatchCourt {
+            get {
+                return ResourceManager.GetString("LabelMatchCourt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Choisir un court.
+        /// </summary>
+        public static string LabelMatchCourtPrompt {
+            get {
+                return ResourceManager.GetString("LabelMatchCourtPrompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Date.
+        /// </summary>
+        public static string LabelMatchDate {
+            get {
+                return ResourceManager.GetString("LabelMatchDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Choisir une date.
+        /// </summary>
+        public static string LabelMatchDatePrompt {
+            get {
+                return ResourceManager.GetString("LabelMatchDatePrompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Joueur.
+        /// </summary>
+        public static string LabelMatchJoueur1 {
+            get {
+                return ResourceManager.GetString("LabelMatchJoueur1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Choisir le premier joueur.
+        /// </summary>
+        public static string LabelMatchJoueur1Prompt {
+            get {
+                return ResourceManager.GetString("LabelMatchJoueur1Prompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Joueur.
+        /// </summary>
+        public static string LabelMatchJoueur2 {
+            get {
+                return ResourceManager.GetString("LabelMatchJoueur2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Choisir le second joueur.
+        /// </summary>
+        public static string LabelMatchJoueur2Prompt {
+            get {
+                return ResourceManager.GetString("LabelMatchJoueur2Prompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Sous-tournoi.
+        /// </summary>
+        public static string LabelMatchSousTournoi {
+            get {
+                return ResourceManager.GetString("LabelMatchSousTournoi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Choisir un sous-tournoi.
+        /// </summary>
+        public static string LabelMatchSousTournoiPrompt {
+            get {
+                return ResourceManager.GetString("LabelMatchSousTournoiPrompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Durée.
+        /// </summary>
+        public static string LabelResultatDuree {
+            get {
+                return ResourceManager.GetString("LabelResultatDuree", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Saisir une durée.
+        /// </summary>
+        public static string LabelResultatDureePrompt {
+            get {
+                return ResourceManager.GetString("LabelResultatDureePrompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Gagnant.
+        /// </summary>
+        public static string LabelResultatGagnant {
+            get {
+                return ResourceManager.GetString("LabelResultatGagnant", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Choisir le gagnant.
+        /// </summary>
+        public static string LabelResultatGagnantPrompt {
+            get {
+                return ResourceManager.GetString("LabelResultatGagnantPrompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Résultat.
+        /// </summary>
+        public static string LabelResultatSetsGagnesJoueur1 {
+            get {
+                return ResourceManager.GetString("LabelResultatSetsGagnesJoueur1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Saisir le résultat.
+        /// </summary>
+        public static string LabelResultatSetsGagnesJoueur1Prompt {
+            get {
+                return ResourceManager.GetString("LabelResultatSetsGagnesJoueur1Prompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Résultat.
+        /// </summary>
+        public static string LabelResultatSetsGagnesJoueur2 {
+            get {
+                return ResourceManager.GetString("LabelResultatSetsGagnesJoueur2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Saisir le résultat.
+        /// </summary>
+        public static string LabelResultatSetsGagnesJoueur2Prompt {
+            get {
+                return ResourceManager.GetString("LabelResultatSetsGagnesJoueur2Prompt", resourceCulture);
             }
         }
     }

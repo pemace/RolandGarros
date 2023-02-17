@@ -4,12 +4,12 @@ namespace RolandGarros.Entities
 {
     public class Resultat : Entity
     {
-        [Required] public TimeSpan Duree;
+        [Required] public TimeSpan Duree { get; set; }
 
-        [Required] public DateTime Date;
+        [Required] public DateTime Date { get; set; }
 
-        [Required] public int setsGagnesPourGagnant;
-        [Required] public int setsGagnesPourPerdant;
+        [Required] public int setsGagnesPourGagnant { get; set; }
+        [Required] public int setsGagnesPourPerdant { get; set; }
 
 
         public Joueur Gagnant { get; set; } = null!;

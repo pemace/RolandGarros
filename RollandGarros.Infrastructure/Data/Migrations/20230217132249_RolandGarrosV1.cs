@@ -183,6 +183,10 @@ namespace RolandGarros.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    Duree = table.Column<TimeSpan>(type: "time", nullable: false),
+                    Date = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    setsGagnesPourGagnant = table.Column<int>(type: "int", nullable: false),
+                    setsGagnesPourPerdant = table.Column<int>(type: "int", nullable: false),
                     GagnantId = table.Column<int>(type: "int", nullable: false),
                     MatchId = table.Column<int>(type: "int", nullable: true)
                 },
@@ -508,8 +512,8 @@ namespace RolandGarros.Data.Migrations
                 columns: new[] { "Id", "NationaliteId", "Nom", "PhotoUrl", "Prenom" },
                 values: new object[,]
                 {
-                    { 1, 1, "Dujardin", null, "François" },
-                    { 2, 2, "Al Kashi", null, "Youssef" }
+                    { 1, 75, "Dujardin", null, "François" },
+                    { 2, 4, "Al Kashi", null, "Youssef" }
                 });
 
             migrationBuilder.InsertData(
@@ -517,10 +521,10 @@ namespace RolandGarros.Data.Migrations
                 columns: new[] { "Id", "Classement", "DateNaissance", "NationaliteId", "Nom", "PhotoUrl", "Prenom", "Sexe" },
                 values: new object[,]
                 {
-                    { 1, null, new DateTime(1983, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), 4, "Rihane", "/images/profiles/rihane.jpg", "Youcef", 0 },
-                    { 2, null, new DateTime(1986, 9, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 75, "Monfils", "/images/profiles/monfils.png", "Gaël", 0 },
-                    { 3, null, new DateTime(1995, 11, 17, 0, 0, 0, 0, DateTimeKind.Unspecified), 18, "Mertens", "/images/profiles/mertens.webp", "Elise", 1 },
-                    { 4, null, new DateTime(1994, 11, 17, 0, 0, 0, 0, DateTimeKind.Unspecified), 75, "Garcia", "/images/profiles/garcia.webp", "Caroline", 1 }
+                    { 1, 10, new DateTime(1983, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), 4, "Rihane", "/images/profiles/rihane.jpg", "Youcef", 0 },
+                    { 2, 20, new DateTime(1986, 9, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 75, "Monfils", "/images/profiles/monfils.png", "Gaël", 0 },
+                    { 3, 100, new DateTime(1995, 11, 17, 0, 0, 0, 0, DateTimeKind.Unspecified), 18, "Mertens", "/images/profiles/mertens.webp", "Elise", 1 },
+                    { 4, 30, new DateTime(1994, 11, 17, 0, 0, 0, 0, DateTimeKind.Unspecified), 75, "Garcia", "/images/profiles/garcia.webp", "Caroline", 1 }
                 });
 
             migrationBuilder.InsertData(
@@ -532,6 +536,11 @@ namespace RolandGarros.Data.Migrations
                 table: "Matchs",
                 columns: new[] { "Id", "ArbitreId", "CourtId", "Date", "Joueur1Id", "Joueur2Id", "SousTournoiId" },
                 values: new object[] { 2, 2, 2, new DateTime(2022, 6, 6, 0, 0, 0, 0, DateTimeKind.Unspecified), 3, 4, 2 });
+
+            migrationBuilder.InsertData(
+                table: "Resultats",
+                columns: new[] { "Id", "Date", "Duree", "GagnantId", "MatchId", "setsGagnesPourGagnant", "setsGagnesPourPerdant" },
+                values: new object[] { 1, new DateTime(2022, 6, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 1, 0, 0, 0), 2, 1, 6, 4 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Arbitres_NationaliteId",

@@ -51,7 +51,7 @@ namespace RolandGarros.Controllers
                 Prenom=joueur.Prenom,
                 DateNaissance=joueur.DateNaissance,
                 Classement=joueur.Classement,
-                Nationalite=joueur.Nationalite.NomFrFr,
+                Nationalite=joueur.Nationalite,
                 Sexe=joueur.Sexe,
                 PhotoUrl=joueur.PhotoUrl
             };
