@@ -89,12 +89,13 @@ namespace RolandGarros.Controllers
                     DateNaissance = joueurViewModel.DateNaissance,
                     Classement = joueurViewModel.Classement,
                     Nationalite = pays,
-                    PhotoUrl = await UploadFile(joueurViewModel.Id, joueurViewModel.Photo)
+                    PhotoUrl = await UploadFile(joueurViewModel.Photo)
                 };
                 _context.Add(joueur);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["Pays"] = new SelectList(_context.Pays, "Id", "NomFrFr");
             return View(joueurViewModel);
         }
 
@@ -142,7 +143,7 @@ namespace RolandGarros.Controllers
             {
                 try
                 {
-                    var photoUrl = joueurEditViewModel.Photo == null ? joueurEditViewModel.PhotoUrl : await UploadFile(joueurEditViewModel.Id, joueurEditViewModel.Photo);
+                    var photoUrl = joueurEditViewModel.Photo == null ? joueurEditViewModel.PhotoUrl : await UploadFile(joueurEditViewModel.Photo);
                     Pays? pays = _context.Pays.SingleOrDefault(p => p.Id == joueurEditViewModel.NationaliteId);
                     if (pays == null)
                     {
@@ -175,6 +176,7 @@ namespace RolandGarros.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["Pays"] = new SelectList(_context.Pays, "Id", "NomFrFr");
             return View(joueurEditViewModel);
         }
 
@@ -220,7 +222,7 @@ namespace RolandGarros.Controllers
           return _context.Joueurs.Any(e => e.Id == id);
         }
 
-        private async Task<string> UploadFile(int id,IFormFile file)
+        private async Task<string> UploadFile(IFormFile file)
         {
             string webRootPath = HostingEnvironment.WebRootPath;
             var filePath = Path.Combine(webRootPath, "images");
@@ -230,13 +232,13 @@ namespace RolandGarros.Controllers
             {
                 Directory.CreateDirectory(filePath);
             }
-            var fileName = id.ToString()+"-"+Path.GetFileName(file.FileName);
+            var fileName = Path.GetFileName(file.FileName);
             var copyPath = Path.Combine(filePath, fileName);
             using (var stream = new FileStream(copyPath, FileMode.Create))
             {
                 await file.CopyToAsync(stream);
             }
-            return @$"/photos/profiles/{fileName}";
+            return @$"/images/profiles/{fileName}";
         }
     }
 }

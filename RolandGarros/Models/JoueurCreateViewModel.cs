@@ -5,7 +5,7 @@ namespace RolandGarros.Models
 {
     public class JoueurCreateViewModel
     {
-        public int Id { get; set; }
+        public int Id { get; init; }
 
         [Required]
         [StringLength(30)]
@@ -14,7 +14,7 @@ namespace RolandGarros.Models
             Prompt ="LabelJoueurNomPrompt",
             ResourceType =typeof(Properties.Resources)
             )]
-        public string Nom { get; set; } = null!;
+        public string Nom { get; init; } = null!;
 
         [Required]
         [StringLength(30)]
@@ -23,7 +23,7 @@ namespace RolandGarros.Models
             Prompt = "LabelJoueurPrenomPrompt",
             ResourceType = typeof(Properties.Resources)
             )]
-        public string Prenom { get; set; } = null!;
+        public string Prenom { get; init; } = null!;
 
         [Required]
         [Display(
@@ -31,7 +31,7 @@ namespace RolandGarros.Models
             Prompt = "LabelJoueurNationalitePrompt",
             ResourceType = typeof(Properties.Resources)
             )]
-        public int NationaliteId { get; set; }
+        public int NationaliteId { get; init; }
 
         [Required]
         [Display(
@@ -39,7 +39,7 @@ namespace RolandGarros.Models
             Prompt = "LabelJoueurSexePrompt",
             ResourceType = typeof(Properties.Resources)
             )]
-        public Sexe Sexe { get; set; }
+        public Sexe Sexe { get; init; }
 
         [Required]
         [Display(
@@ -47,14 +47,14 @@ namespace RolandGarros.Models
             Prompt = "LabelJoueurDateNaissancePrompt",
             ResourceType = typeof(Properties.Resources)
             )]
-        public DateTime DateNaissance { get; set; }
+        public DateTime DateNaissance { get; init; }
 
         [Display(
             Name = "LabelJoueurClassement",
             Prompt = "LabelJoueurClassementPrompt",
             ResourceType = typeof(Properties.Resources)
             )]
-        public int? Classement { get; set; }
+        public int? Classement { get; init; }
 
         [DataType(DataType.Upload)]
         [Display(

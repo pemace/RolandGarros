@@ -62,7 +62,7 @@ namespace RolandGarros.Models
             Prompt = "LabelJoueurPhotoPrompt",
             ResourceType = typeof(Properties.Resources)
             )]
-        public IFormFile Photo { get; init; } = null!;
+        public IFormFile? Photo { get; init; } = null!;
         public string? PhotoUrl { get; init; }
 
 
