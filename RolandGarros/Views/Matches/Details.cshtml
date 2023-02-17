@@ -6,50 +6,91 @@
 
 <h1>Details</h1>
 
-<div>
+<div class="container">
     <h4>Match</h4>
     <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Date)
-        </dt>
-        <dd class = "col-sm-10">
+
+    <dl class="row text-center" style="font-weight:600;font-size:20pt;">
+        <dd class = "col-sm-12">
             @Html.DisplayFor(model => model.Date)
         </dd>
+        <dd class="col-sm-12">
+            @Html.DisplayFor(model => model.SousTournoi.TypeSousTournoi)
+        </dd>
+        <dd class="col-sm-12">
+            @Html.DisplayFor(model => model.SousTournoi.Nom)
+        </dd>
     </dl>
-    @if (Model.Joueur1.PhotoUrl!=null)
-    {
-        <img src="@Model.Joueur1.PhotoUrl" height="300px" />
-    }
-    else
-    {
-        @if (Model.Joueur1.Sexe == RolandGarros.Entities.Sexe.Homme)
-        {
-            <img src="~/images/profile-man.svg" height="300px" style="text-align:left" />
-        }
-        else
-        {
-            <img src="~/images/profile-woman.png" height="300px" style="text-align:left" />
-        }
 
-    }
-
-    @if (Model.Joueur2.PhotoUrl != null)
-    {
-        <img src="@Model.Joueur2.PhotoUrl" height="300px" />
-    }
-    else
-    {
-        @if (Model.Joueur2.Sexe == RolandGarros.Entities.Sexe.Homme)
-        {
+    <div class="row">
+        <div class="col-md-5 text-center">
+            
+            @if (Model.Joueur1.PhotoUrl!=null)
+            {
+                <img src="@Model.Joueur1.PhotoUrl" height="300px" />
+            }
+            else
+            {
+                @if (Model.Joueur1.Sexe == RolandGarros.Entities.Sexe.Homme)
+                {
                     <img src="~/images/profile-man.svg" height="300px" style="text-align:left" />
-        }
-        else
-        {
+                }
+                else
+                {
                     <img src="~/images/profile-woman.png" height="300px" style="text-align:left" />
-        }
+                }
 
+            }
+            @{
+                string imageDrapeau = "/images/flags/" + Model.Joueur1.Nationalite.Alpha2 + ".svg";
+            }
+            <img src="@imageDrapeau" width="70" />
+            <h1>@Model.Joueur1.Prenom @Model.Joueur1.Nom</h1>
+        </div>
+        <div class="col-md-2" style="font-size:55pt;">
+            <div class="row text-center justify-content-center align-content-center">
+                <div class="col-6">@Model.SetsGagnesPourJoueur1</div>
+                <div class="col-6">@Model.SetsGagnesPourJoueur2</div>
+            </div>
+        </div>
+        <div class="col-md-5 text-center">
+            @{
+                imageDrapeau = "/images/flags/" + Model.Joueur2.Nationalite.Alpha2 + ".svg";
+            }
+            <img src="@imageDrapeau" width="70" />
+            @if (Model.Joueur2.PhotoUrl != null)
+            {
+                <img src="@Model.Joueur2.PhotoUrl" height="300px" />
+            }
+            else
+            {
+                @if (Model.Joueur2.Sexe == RolandGarros.Entities.Sexe.Homme)
+                {
+                    <img src="~/images/profile-man.svg" height="300px" style="text-align:left" />
+                }
+                else
+                {
+                    <img src="~/images/profile-woman.png" height="300px" style="text-align:left" />
+                }
+
+            }
+            <h1>@Model.Joueur2.Prenom @Model.Joueur2.Nom</h1>
+        </div>
+    </div>
+    @if(Model.Duree!=null)
+    {
+        <div class="Row text-center" style="font-weight:600;font-size:20pt;">
+            @Html.DisplayNameFor(model => model.Duree) :
+            @Html.DisplayFor(model => model.Duree)
+        </div>
     }
+
+    <div class="Row text-center" style="font-weight:600;font-size:20pt;">
+        @Html.DisplayNameFor(model => model.Arbitre) :
+        @Html.DisplayFor(model => model.Arbitre.Prenom)
+        @Html.DisplayFor(model => model.Arbitre.Nom)
+    </div>
+    
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |

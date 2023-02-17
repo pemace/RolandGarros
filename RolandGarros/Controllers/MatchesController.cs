@@ -94,6 +94,11 @@ namespace RolandGarros.Controllers
             var match = await _context.Matchs
                 .Include(m=>m.Joueur1)
                 .Include(m=>m.Joueur2)
+                .Include(m=>m.Joueur1.Nationalite)
+                .Include(m => m.Joueur2.Nationalite)
+                .Include(m=>m.SousTournoi)
+                .Include(m=>m.Arbitre)
+                .Include(m=>m.Court)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (match == null)
             {
