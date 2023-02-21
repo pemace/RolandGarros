@@ -1,15 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 using RolandGarros.Data;
 
-var builder = WebApplication.CreateBuilder(args);
+var builder = WebApplication.CreateBuilder(args); //https://localhost:7012/
+builder.Services.AddControllersWithViews();
+var baseAdress = "https://localhost:7012";
+builder.Services.AddHttpClient("API", o => { o.BaseAddress = new Uri(baseAdress); });
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<TennisContext>(
-            options=>options.UseSqlServer(
-                builder.Configuration.GetConnectionString("localConnection")
-                )
-            );
 
 var app = builder.Build();
 
@@ -23,7 +21,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+app.UseAuthentication();
 app.UseRouting();
 
 app.UseAuthorization();
