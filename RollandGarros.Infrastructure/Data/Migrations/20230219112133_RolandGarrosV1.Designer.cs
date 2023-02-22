@@ -12,7 +12,7 @@ using RolandGarros.Data;
 namespace RolandGarros.Data.Migrations
 {
     [DbContext(typeof(TennisContext))]
-    [Migration("20230217132249_RolandGarrosV1")]
+    [Migration("20230219112133_RolandGarrosV1")]
     partial class RolandGarrosV1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

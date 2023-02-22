@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RolandGarros.Infrastructure
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RollandGarros.Tests", "RollandGarros.Tests\RollandGarros.Tests.csproj", "{957BB5E5-AD1E-48F1-8895-46755D633B4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RolandGarros.Api", "RolandGarros.Api\RolandGarros.Api.csproj", "{4BF3237F-F61F-4606-BE41-629135B938B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RolandGarros.Api", "RolandGarros.Api\RolandGarros.Api.csproj", "{4BF3237F-F61F-4606-BE41-629135B938B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

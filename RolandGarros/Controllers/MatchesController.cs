@@ -24,21 +24,15 @@ namespace RolandGarros.Controllers
         // GET: Matches
         public async Task<IActionResult> Index()
         {
-            var listeMatchs = await _context.Matchs
-                .Include(m => m.Joueur1)
-                .Include(m => m.Joueur2)
-                .Include(m => m.Joueur1.Nationalite)
-                .Include(m => m.Joueur2.Nationalite)
-                .Include(m => m.Court)
-                .Include(m => m.Arbitre)
-                .Include(m => m.SousTournoi)
-                .ToListAsync();
+            HttpClient client = HttpClientFactory.CreateClient("API");
+
+            var matchs = await client.GetFromJsonAsync<IEnumerable<Match>>("api/Matchs");
 
             List<MatchsListViewModel> listeAffichage = new List<MatchsListViewModel>();
 
-            foreach (Match match in listeMatchs)
+            foreach (MatchsListViewModel match in listeAffichage)
             {
-                var resultat = await _context.Resultats
+                var resultat = await Resultats
                             .Include(r => r.Gagnant)
                             .Include(r => r.Match)
                             .SingleOrDefaultAsync(r => r.Match.Id == match.Id);

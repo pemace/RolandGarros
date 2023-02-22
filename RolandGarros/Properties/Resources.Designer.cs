@@ -365,5 +365,23 @@ namespace RolandGarros.Properties {
                 return ResourceManager.GetString("LabelResultatSetsGagnesJoueur2Prompt", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Perdant.
+        /// </summary>
+        public static string LabelResultatSetsPerdants {
+            get {
+                return ResourceManager.GetString("LabelResultatSetsPerdants", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Choisir le perdant.
+        /// </summary>
+        public static string LabelResultatSetsPerdantsPrompt {
+            get {
+                return ResourceManager.GetString("LabelResultatSetsPerdantsPrompt", resourceCulture);
+            }
+        }
     }
 }

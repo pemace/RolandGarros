@@ -219,4 +219,10 @@
   <data name="LabelResultatSetsGagnesJoueur2Prompt" xml:space="preserve">
     <value>Saisir le résultat</value>
   </data>
+  <data name="LabelResultatSetsPerdants" xml:space="preserve">
+    <value>Perdant</value>
+  </data>
+  <data name="LabelResultatSetsPerdantsPrompt" xml:space="preserve">
+    <value>Choisir le perdant</value>
+  </data>
 </root>

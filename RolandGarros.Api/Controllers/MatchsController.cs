@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -41,9 +42,14 @@ namespace RolandGarros.Api.Controllers
         public async Task<ActionResult<Match>> GetMatch(int id)
         {
             var match = await _context.Matchs
-                            .Include(m => m.Gagnant)
-                            .Include(m)
-                            .SingleOrDefaultAsync(id);
+                .Include(m => m.Joueur1)
+                .Include(m => m.Joueur2)
+                .Include(m => m.Joueur1.Nationalite)
+                .Include(m => m.Joueur2.Nationalite)
+                .Include(m => m.Court)
+                .Include(m => m.Arbitre)
+                .Include(m => m.SousTournoi)
+                .SingleOrDefaultAsync(m => m.Id == id);
 
             if (match == null)
             {
