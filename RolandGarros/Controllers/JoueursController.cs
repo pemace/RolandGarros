@@ -48,7 +48,7 @@ namespace RolandGarros.Controllers
         public async Task<IActionResult> Create()
         {
 			HttpClient client = HttpClientFactory.CreateClient("API");
-			var pays = await client.GetFromJsonAsync<IEnumerable<JoueurDetailsViewModel>>($"api/Pays");
+			var pays = await client.GetFromJsonAsync<IEnumerable<Pays>>($"api/Pays");
 
 			ViewData["Pays"]= new SelectList(pays , "Id", "NomFrFr"); 
             return View(new JoueurCreateViewModel());
@@ -93,7 +93,7 @@ namespace RolandGarros.Controllers
 				return BadRequest();
             }
 			HttpClient client = HttpClientFactory.CreateClient("API");
-			var listePays = await client.GetFromJsonAsync<IEnumerable<JoueurDetailsViewModel>>($"api/Pays");
+			var listePays = await client.GetFromJsonAsync<IEnumerable<Pays>>($"api/Pays");
 
 			ViewData["Pays"] = new SelectList(listePays, "Id", "NomFrFr");
             return View(joueurViewModel);
@@ -116,7 +116,7 @@ namespace RolandGarros.Controllers
             }
 
 			HttpClient client = HttpClientFactory.CreateClient("API");
-			var pays = await client.GetFromJsonAsync<IEnumerable<JoueurDetailsViewModel>>($"api/Pays");
+			var pays = await client.GetFromJsonAsync<IEnumerable<Pays>>($"api/Pays");
 			ViewData["Pays"] = new SelectList(pays, "Id", "NomFrFr");
             return View(joueur);
         }
@@ -167,7 +167,7 @@ namespace RolandGarros.Controllers
 
 
 		    HttpClient client = HttpClientFactory.CreateClient("API");
-		    var listePays = await client.GetFromJsonAsync<IEnumerable<JoueurDetailsViewModel>>($"api/Pays");
+		    var listePays = await client.GetFromJsonAsync<IEnumerable<Pays>>($"api/Pays");
 		    ViewData["Pays"] = new SelectList(listePays, "Id", "NomFrFr");
             return View(joueurEditViewModel);
         }
