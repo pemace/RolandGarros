@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Hosting.Internal;
-using RolandGarros.Data;
 using RolandGarros.Entities;
 using RolandGarros.Models;
 
@@ -28,7 +20,7 @@ namespace RolandGarros.Controllers
         public async Task<IActionResult> Index()
         {
             HttpClient client = HttpClientFactory.CreateClient("API");
-			var joueurs = await client.GetFromJsonAsync<IEnumerable<JoueursListViewModel>>("api/Joueurs");
+			var joueurs = await client.GetFromJsonAsync<IEnumerable<Joueur>>("api/Joueurs");
 
 			return View(joueurs);
         }
