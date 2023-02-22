@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
@@ -27,7 +28,7 @@ namespace RolandGarros.Controllers
         {
             HttpClient client = HttpClientFactory.CreateClient("API");
 
-            var matchs = await client.GetFromJsonAsync<IEnumerable<Match>>("api/Matchs");
+            var matchs = await client.GetFromJsonAsync<IEnumerable<MatchsListViewModel>>("api/Matchs");
 
             return View(matchs);
         }
@@ -108,38 +109,28 @@ namespace RolandGarros.Controllers
 
             if (ModelState.IsValid)
             {
-                try
-                {
-                    _context.Update(matchEditViewModel);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!MatchExists(matchEditViewModel.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
+				HttpClient httpClient = HttpClientFactory.CreateClient("API");
+				var response = await httpClient.PutAsJsonAsync($"api/Matchs/{id}", matchEditViewModel);
+				if (response.IsSuccessStatusCode)
+				{
+					return RedirectToAction(nameof(Index));
+				}
+				return BadRequest();
+			}
             return View(matchEditViewModel);
         }
 
         // GET: Matches/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Matchs == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var match = await _context.Matchs
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (match == null)
+			using HttpClient httpClient = HttpClientFactory.CreateClient("API");
+			var match = await httpClient.GetFromJsonAsync<MatchDeleteViewModel>($"api/Matchs/{id}");
+			if (match == null)
             {
                 return NotFound();
             }
@@ -152,23 +143,20 @@ namespace RolandGarros.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Matchs == null)
-            {
-                return Problem("Entity set 'TennisContext.Matchs'  is null.");
-            }
-            var match = await _context.Matchs.FindAsync(id);
-            if (match != null)
-            {
-                _context.Matchs.Remove(match);
-            }
+			using HttpClient httpClient = HttpClientFactory.CreateClient("API");
+			var response = await httpClient.DeleteAsync($"api/Matchs/{id}");
+			if (response.IsSuccessStatusCode)
+			{
+				return RedirectToAction(nameof(Index));
+			}
+			return BadRequest();
+		}
 
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
-
-        private bool MatchExists(int id)
+        private async Task<bool> MatchExists(int id)
         {
-            return _context.Matchs.Any(e => e.Id == id);
-        }
+			HttpClient client = HttpClientFactory.CreateClient("API");
+			var match = await client.GetFromJsonAsync<Match>($"api/Matchs/{id}");
+			return match != null;
+		}
     }
 }

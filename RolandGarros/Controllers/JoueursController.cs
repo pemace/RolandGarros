@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using RolandGarros.Entities;
 using RolandGarros.Models;
+using System.Text.Json;
 
 namespace RolandGarros.Controllers
 {
@@ -66,9 +67,9 @@ namespace RolandGarros.Controllers
             {
                 var photoUrl = joueurViewModel.Photo == null ? null : await UploadFile(joueurViewModel.Photo);
 
-				HttpClient httpClient = HttpClientFactory.CreateClient("API");
-				var pays = await httpClient.GetFromJsonAsync<Pays>($"api/Pays/{joueurViewModel.NationaliteId}");
-                if(pays==null)
+                using HttpClient httpClient = HttpClientFactory.CreateClient("API");
+                var pays = await httpClient.GetFromJsonAsync<Pays>($"api/Pays/{joueurViewModel.NationaliteId}");
+                if (pays == null)
                 {
                     return NotFound();
                 }
@@ -79,11 +80,13 @@ namespace RolandGarros.Controllers
                     Sexe = joueurViewModel.Sexe,
                     DateNaissance = joueurViewModel.DateNaissance,
                     Classement = joueurViewModel.Classement,
-                    Nationalite = pays,
-                    PhotoUrl = photoUrl
+                    NationaliteId = joueurViewModel.NationaliteId,
+                    PhotoUrl = photoUrl,
+                    Nationalite=pays
                 };
 
-				httpClient = HttpClientFactory.CreateClient("API");
+				string message=JsonSerializer.Serialize(joueur);
+
 				var response = await httpClient.PostAsJsonAsync("api/Joueurs", joueur);
 
 				if (response.IsSuccessStatusCode)
@@ -157,7 +160,7 @@ namespace RolandGarros.Controllers
                 };
 
 				httpClient = HttpClientFactory.CreateClient("API");
-				var response = await httpClient.PutAsJsonAsync($"api/Students/{id}", joueur);
+				var response = await httpClient.PutAsJsonAsync($"api/Joueurs/{id}", joueur);
 				if (response.IsSuccessStatusCode)
 				{
 					return RedirectToAction(nameof(Index));

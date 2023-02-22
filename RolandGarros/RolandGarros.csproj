@@ -17,7 +17,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RolandGarros.Core\RolandGarros.Core.csproj" />
-    <ProjectReference Include="..\RollandGarros.Infrastructure\RolandGarros.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,9 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using RolandGarros.Data;
 
 var builder = WebApplication.CreateBuilder(args); //https://localhost:7012/
 builder.Services.AddControllersWithViews();
-var baseAdress = "https://localhost:44346";
+var baseAdress = "https://localhost:7012";
 builder.Services.AddHttpClient("API", o => { o.BaseAddress = new Uri(baseAdress); });
 
 // Add services to the container. 
