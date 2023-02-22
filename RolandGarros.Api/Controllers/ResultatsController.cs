@@ -28,6 +28,10 @@ namespace RolandGarros.Api.Controllers
             return await _context.Resultats
                .Include(r => r.Gagnant)
                .Include(r => r.Match)
+               .Include(r => r.Match.Joueur1)
+               .Include(r => r.Match.Joueur1.Nationalite)
+               .Include(r => r.Match.Joueur2)
+               .Include(r => r.Match.Joueur2.Nationalite)
                .ToListAsync();
         }
 
@@ -38,6 +42,10 @@ namespace RolandGarros.Api.Controllers
             var resultat = await _context.Resultats
                .Include(r => r.Gagnant)
                .Include(r => r.Match)
+               .Include(r => r.Match.Joueur1)
+               .Include(r => r.Match.Joueur1.Nationalite)
+               .Include(r => r.Match.Joueur2)
+               .Include(r => r.Match.Joueur2.Nationalite)
                .SingleOrDefaultAsync(r => r.Id == id);
         
             if (resultat == null)

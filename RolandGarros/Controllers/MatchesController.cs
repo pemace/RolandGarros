@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Json;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -28,117 +29,28 @@ namespace RolandGarros.Controllers
 
             var matchs = await client.GetFromJsonAsync<IEnumerable<Match>>("api/Matchs");
 
-            List<MatchsListViewModel> listeAffichage = new List<MatchsListViewModel>();
-
-            foreach (MatchsListViewModel match in listeAffichage)
-            {
-                var resultat = await Resultats
-                            .Include(r => r.Gagnant)
-                            .Include(r => r.Match)
-                            .SingleOrDefaultAsync(r => r.Match.Id == match.Id);
-
-                int? setsGagnesJoueur1;
-                int? setsGagnesJoueur2;
-
-
-                if (resultat != null)
-                {
-                    setsGagnesJoueur1 = match.Joueur1.Id == resultat.Gagnant.Id ?
-                                            resultat.setsGagnesPourGagnant :
-                                            resultat.setsGagnesPourPerdant;
-                    setsGagnesJoueur2 = match.Joueur2.Id == resultat.Gagnant.Id ?
-                                            resultat.setsGagnesPourGagnant :
-                                            resultat.setsGagnesPourPerdant;
-                }
-                else
-                {
-                    setsGagnesJoueur1 = null;
-                    setsGagnesJoueur2 = null;
-                }
-
-
-                var modele = new MatchsListViewModel()
-                {
-                    Id = match.Id,
-                    Joueur1 = match.Joueur1,
-                    Joueur2 = match.Joueur2,
-                    Arbitre = match.Arbitre,
-                    Court = match.Court,
-                    Date = match.Date,
-                    SousTournoi = match.SousTournoi,
-                    Duree = resultat == null ? null : resultat.Duree,
-                    Gagnant = resultat == null ? null : resultat.Gagnant,
-                    SetsGagnesPourJoueur1 = setsGagnesJoueur1,
-                    SetsGagnesPourJoueur2 = setsGagnesJoueur2
-                };
-                listeAffichage.Add(modele);
-            }
-
-
-            return View(listeAffichage);
+            return View(matchs);
         }
 
         // GET: Matches/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Matchs == null)
+            if (id == null)
             {
                 return NotFound();
             }
+           
+            HttpClient httpClient = HttpClientFactory.CreateClient("API");
 
-            var match = await _context.Matchs
-                .Include(m => m.Joueur1)
-                .Include(m => m.Joueur2)
-                .Include(m => m.Joueur1.Nationalite)
-                .Include(m => m.Joueur2.Nationalite)
-                .Include(m => m.SousTournoi)
-                .Include(m => m.Arbitre)
-                .Include(m => m.Court)
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var match = await httpClient.GetFromJsonAsync<MatchDetailsViewModel>($"api/Matchs/{id}");
+
+           
             if (match == null)
             {
                 return NotFound();
             }
 
-            var resultat = await _context.Resultats
-                            .Include(r => r.Gagnant)
-                            .Include(r => r.Match)
-                            .SingleOrDefaultAsync(r => r.Match.Id == match.Id);
-
-
-            int? setsGagnesJoueur1;
-            int? setsGagnesJoueur2;
-            if (resultat != null)
-            {
-                setsGagnesJoueur1 = match.Joueur1.Id == resultat.Gagnant.Id ?
-                                        resultat.setsGagnesPourGagnant :
-                                        resultat.setsGagnesPourPerdant;
-                setsGagnesJoueur2 = match.Joueur2.Id == resultat.Gagnant.Id ?
-                                        resultat.setsGagnesPourGagnant :
-                                        resultat.setsGagnesPourPerdant;
-            }
-            else
-            {
-                setsGagnesJoueur1 = null;
-                setsGagnesJoueur2 = null;
-            }
-
-            var modele = new MatchDetailsViewModel()
-            {
-                Id = match.Id,
-                Joueur1 = match.Joueur1,
-                Joueur2 = match.Joueur2,
-                Arbitre = match.Arbitre,
-                Court = match.Court,
-                Date = match.Date,
-                SousTournoi = match.SousTournoi,
-                Duree = resultat == null ? null : resultat.Duree,
-                Gagnant = resultat == null ? null : resultat.Gagnant,
-                SetsGagnesPourJoueur1 = setsGagnesJoueur1,
-                SetsGagnesPourJoueur2 = setsGagnesJoueur2
-            };
-
-            return View(modele);
+            return View(match);
         }
 
         // GET: Matches/Create
@@ -152,26 +64,29 @@ namespace RolandGarros.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Date,Id")] Match match)
+        public async Task<IActionResult> Create(MatchCreateViewModel matchViewModel)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(match);
-                await _context.SaveChangesAsync();
+                HttpClient httpClient = HttpClientFactory.CreateClient("API");
+                var match = await httpClient.PostAsJsonAsync<MatchCreateViewModel>("api/Matchs", matchViewModel) ;
+
                 return RedirectToAction(nameof(Index));
             }
-            return View(match);
+            return View(matchViewModel);
         }
+        //TODO: Faire les vues
 
         // GET: Matches/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Matchs == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var match = await _context.Matchs.FindAsync(id);
+            using HttpClient httpClient = HttpClientFactory.CreateClient("API");
+            var match = await httpClient.GetFromJsonAsync<MatchEditViewModel>($"api/Matchs/{id}");
             if (match == null)
             {
                 return NotFound();
