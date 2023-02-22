@@ -99,9 +99,9 @@ namespace RolandGarros.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Date,Id")] Match match)
+        public async Task<IActionResult> Edit(int id, MatchEditViewModel matchEditViewModel)
         {
-            if (id != match.Id)
+            if (id != matchEditViewModel.Id)
             {
                 return NotFound();
             }
@@ -110,12 +110,12 @@ namespace RolandGarros.Controllers
             {
                 try
                 {
-                    _context.Update(match);
+                    _context.Update(matchEditViewModel);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!MatchExists(match.Id))
+                    if (!MatchExists(matchEditViewModel.Id))
                     {
                         return NotFound();
                     }
@@ -126,7 +126,7 @@ namespace RolandGarros.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(match);
+            return View(matchEditViewModel);
         }
 
         // GET: Matches/Delete/5
