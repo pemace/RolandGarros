@@ -15,7 +15,7 @@ namespace RolandGarros.Controllers
 			HttpClientFactory = httpClientFactory;
             HostingEnvironment = hostingEnvironment;
         }
-
+        
         // GET: Joueurs
         public async Task<IActionResult> Index()
         {
@@ -205,6 +205,7 @@ namespace RolandGarros.Controllers
 			return joueur!=null;
         }
 
+        //TODO: A Déplacer dans API
         private async Task<string> UploadFile(IFormFile file)
         {
             string webRootPath = HostingEnvironment.WebRootPath;
