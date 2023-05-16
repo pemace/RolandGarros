@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RolandGarros.Data;
 
@@ -11,9 +12,10 @@ using RolandGarros.Data;
 namespace RolandGarros.Data.Migrations
 {
     [DbContext(typeof(TennisContext))]
-    partial class TennisContextModelSnapshot : ModelSnapshot
+    [Migration("20230516054332_RolandGarrosV2")]
+    partial class RolandGarrosV2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
